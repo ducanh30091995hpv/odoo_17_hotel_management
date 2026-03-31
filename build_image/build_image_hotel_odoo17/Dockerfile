@@ -16,3 +16,6 @@ COPY ./config/odoo.conf /etc/odoo/odoo.conf
 
 # Chuyển lại về user odoo để đảm bảo bảo mật
 USER odoo
+
+# Tự động install các module custom khi khởi tạo database 'odoo_db'
+CMD ["odoo", "-d", "odoo_db", "-i", "hotel_management_odoo,web_admin_aurora,web_window_title"]

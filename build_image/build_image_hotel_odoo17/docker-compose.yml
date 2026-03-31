@@ -10,6 +10,7 @@ services:
       - HOST=db
       - USER=odoo
       - PASSWORD=odoo
+      - DB_NAME=odoo_db
     volumes:
       - ./extra-addons:/mnt/extra-addons
       - ./config:/etc/odoo
