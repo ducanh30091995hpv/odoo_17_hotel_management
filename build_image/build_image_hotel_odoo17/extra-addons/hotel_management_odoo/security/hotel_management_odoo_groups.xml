@@ -49,5 +49,7 @@
                eval="[(4, ref('hotel_management_odoo.maintenance_team_group_leader')),
                        (4, ref('hotel_management_odoo.cleaning_team_group_head')),
                        (4, ref('hotel_group_reception')), ]"/>
+        <!-- TỰ ĐỘNG THÊM ADMIN VÀO NHÓM NÀY -->
+        <field name="users" eval="[(4, ref('base.user_admin'))]"/>
     </record>
 </odoo>

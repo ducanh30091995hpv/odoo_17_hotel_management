@@ -1,12 +1,8 @@
 # Sử dụng base image Odoo 17 chính thức
 FROM odoo:17.0
 
-# Chuyển sang quyền root để cài đặt thêm thư viện nếu cần
+# Chuyển sang quyền root để cài đặt thêm thư viện và phân quyền
 USER root
-
-# Nếu module custom của bạn có file requirements.txt, hãy uncomment dòng dưới
-# COPY ./extra-addons/my_module/requirements.txt /tmp/requirements.txt
-# RUN pip install -r /tmp/requirements.txt
 
 # Copy toàn bộ module custom vào thư mục addons của Odoo trong container
 COPY ./extra-addons /mnt/extra-addons
@@ -14,8 +10,18 @@ COPY ./extra-addons /mnt/extra-addons
 # Copy file cấu hình vào container
 COPY ./config/odoo.conf /etc/odoo/odoo.conf
 
+# NEW: Copy các script hỗ trợ khởi tạo Tiếng Việt & Phân quyền
+COPY ./init_odoo.py /tmp/init_odoo.py
+COPY ./entrypoint.sh /usr/local/bin/entrypoint.sh
+
+# Cấp quyền thực thi cho entrypoint
+RUN chmod +x /usr/local/bin/entrypoint.sh
+
 # Chuyển lại về user odoo để đảm bảo bảo mật
 USER odoo
 
-# Tự động install các module custom khi khởi tạo database 'odoo_db'
-CMD ["odoo", "-d", "odoo_db", "-i", "hotel_management_odoo,web_admin_aurora,web_window_title"]
+# Thiết lập Entrypoint để xử lý khởi tạo ở lần đầu tiên
+ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
+
+# Mặc định khởi động Odoo server với database odoo_db
+CMD ["-d", "odoo_db"]
