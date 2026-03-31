@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hotel_holiday_view_tree" model="ir.ui.view">
+        <field name="name">hotel.holiday.view.tree</field>
+        <field name="model">hotel.holiday</field>
+        <field name="arch" type="xml">
+            <tree string="Ngày lễ" editable="bottom">
+                <field name="name"/>
+                <field name="date_from"/>
+                <field name="date_to"/>
+                <field name="active"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="hotel_holiday_action" model="ir.actions.act_window">
+        <field name="name">Cấu hình ngày lễ</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">hotel.holiday</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="hotel_holiday_menu" 
+              name="Cấu hình ngày lễ" 
+              parent="hotel_management_odoo.hotel_config_menu" 
+              action="hotel_holiday_action" 
+              sequence="20"/>
+</odoo>

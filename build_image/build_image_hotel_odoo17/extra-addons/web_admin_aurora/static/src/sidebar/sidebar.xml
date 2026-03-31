@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<templates xml:space="preserve">
+
+    <t t-name="web_admin_aurora.SideBar">
+        <aside class="o_aurora_sidebar" t-att-class="{ 'o_collapsed': state.isCollapsed }">
+            <div class="o_sidebar_header">
+                <div class="o_sidebar_logo d-flex align-items-center">
+                    <img t-att-src="state.branding.logo || '/web/static/img/logo.png'" alt="Logo" class="o_sidebar_logo_img" t-att-class="{ 'o_logo_mini': state.isCollapsed }"/>
+                    <span class="o_sidebar_brand_title ms-2 fw-bold" t-if="!state.isCollapsed and !state.branding.logo" t-esc="state.branding.title"/>
+                </div>
+
+                <button class="o_sidebar_toggle py-2 px-3 border-0 bg-transparent" t-on-click="toggleSidebar">
+                    <i class="oi oi-chevron-left" t-if="!state.isCollapsed"/>
+                    <i class="oi oi-chevron-right" t-else=""/>
+                </button>
+            </div>
+
+            <div class="o_sidebar_content scrollutils">
+                <!-- App Selection Section -->
+                <div class="o_sidebar_section_header" t-if="!state.isCollapsed">APPLICATIONS</div>
+                <div class="o_sidebar_apps_grid">
+                    <t t-foreach="apps" t-as="app" t-key="app.id">
+                        <a t-att-href="getMenuItemHref(app)" 
+                           class="o_sidebar_app_item" 
+                           t-att-class="{ 'active': currentApp and currentApp.id === app.id }"
+                           t-att-title="app.name"
+                           t-on-click.prevent="() => this.onMenuClick(app)">
+                            <t t-if="app.webIconData or app.webIcon">
+                                <div class="o_app_icon_img" 
+                                     t-attf-style="background: url('#{getIconSrc(app)}') no-repeat center; background-size: contain;"/>
+                            </t>
+                            <i t-else="" class="fa fa-cube o_app_icon"/>
+                            <span class="o_app_name" t-if="!state.isCollapsed" t-esc="app.name"/>
+                        </a>
+                    </t>
+                </div>
+
+
+
+                <hr class="o_sidebar_divider" />
+
+                <!-- Current App Sections Section -->
+                <t t-if="currentApp">
+                    <div class="o_sidebar_section_header" t-if="!state.isCollapsed" t-esc="currentApp.name.toUpperCase()"/>
+                    <div class="o_sidebar_menu_tree">
+                        <t t-foreach="currentAppSections" t-as="section" t-key="section.id">
+                            <t t-call="web_admin_aurora.SideBar.MenuItem">
+                                <t t-set="menu" t-value="section"/>
+                                <t t-set="level" t-value="0"/>
+                            </t>
+                        </t>
+                    </div>
+                </t>
+
+
+            </div>
+
+            <div class="o_sidebar_footer" t-if="!state.isCollapsed">
+                <div class="o_sidebar_user">
+                    <!-- User info could go here -->
+                </div>
+            </div>
+        </aside>
+    </t>
+
+    <t t-name="web_admin_aurora.SideBar.MenuItem">
+        <div class="o_sidebar_menu_item_wrapper" t-att-data-level="level">
+            <a t-att-href="getMenuItemHref(menu)"
+               class="o_sidebar_menu_item"
+               t-att-class="{ 'active': isMenuSelected(menu) }"
+               t-on-click.prevent="() => this.onMenuClick(menu)">
+                <t t-if="menu.webIcon">
+                    <i t-attf-class="fa #{menu.webIcon.split(',')[1]} me-2 o_menu_icon"/>
+                </t>
+                <t t-else="">
+                    <i t-if="level === 0 and !state.isCollapsed" class="fa fa-circle-o me-2 small opacity-50"/>
+                </t>
+                <span class="o_menu_label" t-esc="menu.name"/>
+                <i class="oi oi-chevron-right ms-auto small transition-all" 
+                   t-att-class="{ 'rotate-90': isMenuExpanded(menu) }"
+                   t-if="menu.childrenTree and menu.childrenTree.length and !state.isCollapsed"/>
+            </a>
+            <div class="o_sidebar_submenu" t-if="menu.childrenTree and menu.childrenTree.length and isMenuExpanded(menu)">
+                <t t-foreach="menu.childrenTree" t-as="child" t-key="child.id">
+                    <t t-call="web_admin_aurora.SideBar.MenuItem">
+                        <t t-set="menu" t-value="child"/>
+                        <t t-set="level" t-value="level + 1"/>
+                    </t>
+                </t>
+            </div>
+        </div>
+    </t>
+
+
+
+
+
+</templates>

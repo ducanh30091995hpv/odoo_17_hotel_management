@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="room_booking_line_view_calendar" model="ir.ui.view">
+        <field name="name">room.booking.line.view.calendar</field>
+        <field name="model">room.booking.line</field>
+        <field name="priority" eval="2"/>
+        <field name="arch" type="xml">
+            <calendar string="Room overview" create="0" mode="month" date_start="checkin_date" date_stop="checkout_date"
+                      color="state" event_open_popup="true">
+                <field name="state" string="Trạng thái" filters="1" />
+                <field name="partner_id"/>
+                <field name="phone"/>
+                <field name="mobile"/>
+            </calendar>
+        </field>
+    </record>
+
+    <record id="room_booking_line_search" model="ir.ui.view">
+        <field name="name">room.booking.line.search</field>
+        <field name="model">room.booking.line</field>
+        <field name="arch" type="xml">
+            <search string="Room Booking Line">
+                <field string="Phòng" name="room_id"/>
+                <filter string="Checkin" name="checkin_date" date="checkin_date"/>
+                <filter string="Checkout" name="checkout_date" date="checkout_date"/>
+                <filter string="Đã đặt" name="dadat_patients" domain="[('state', '=', 'reserved')]"/>
+                <filter string="Đang thuê" name="dangthue_patients" domain="[('state', '=', 'check_in')]"/>
+                <filter string="Chưa dọn" name="chuadon_patients" domain="[('room_id.status', '=', 'clean')]"/>
+            </search>
+        </field>
+    </record>
+
+    <!--     Room Booking Menu action -->
+    <record id="room_booking_line_action" model="ir.actions.act_window">
+        <field name="name">Room Booking Line</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">room.booking.line</field>
+        <field name="view_mode">calendar</field>
+    </record>
+    <!--     Reservation menu -->
+
+    <menuitem id="room_booking_line_menu" name="Phòng đã đặt" sequence="10"
+              parent="room_booking_abc_menu"
+              action="room_booking_line_action"/>
+</odoo>

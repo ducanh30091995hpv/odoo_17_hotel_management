@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hotel_revenue_report_view_form" model="ir.ui.view">
+        <field name="name">hotel.revenue.report.view.form</field>
+        <field name="model">hotel.revenue.report</field>
+        <field name="arch" type="xml">
+            <form string="Báo cáo doanh thu chi tiết">
+                <group>
+                    <group>
+                        <field name="date_from"/>
+                    </group>
+                    <group>
+                        <field name="date_to"/>
+                    </group>
+                </group>
+                <footer>
+                    <button name="action_export_xlsx" string="Xuất Excel" type="object" class="btn-primary"/>
+                    <button string="Hủy" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="hotel_revenue_report_action" model="ir.actions.act_window">
+        <field name="name">Báo cáo doanh thu chi tiết</field>
+        <field name="res_model">hotel.revenue.report</field>
+        <field name="view_mode" xml:id="view_mode_form" eval="'form'"/>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="hotel_revenue_report_menu"
+              name="Báo cáo doanh thu chi tiết"
+              action="hotel_revenue_report_action"
+              parent="hotel_reporting_menu"
+              sequence="15"/>
+</odoo>

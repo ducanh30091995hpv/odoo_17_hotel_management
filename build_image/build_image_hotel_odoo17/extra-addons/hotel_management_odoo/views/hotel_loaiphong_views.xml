@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <!--Hotel Floor Tree View-->
+    <record id="hotel_loaiphong_view_tree" model="ir.ui.view">
+        <field name="name">hotel.loaiphong.view.tree</field>
+        <field name="model">hotel.loaiphong</field>
+        <field name="arch" type="xml">
+            <tree editable="bottom">
+                <field name="name"/>
+                <field name="user_id"/>
+            </tree>
+        </field>
+    </record>
+    <!--    Floor Menu Action-->
+    <record id="hotel_loaiphong_action" model="ir.actions.act_window">
+        <field name="name">Loại phòng</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">hotel.loaiphong</field>
+        <field name="view_mode">tree</field>
+    </record>
+    <!--Floors Menu-->
+    <menuitem id="hotel_loaiphong_menu"
+              name="Loại phòng"
+              action="hotel_loaiphong_action"
+              parent="hotel_config_menu"
+              sequence="50"/>
+</odoo>

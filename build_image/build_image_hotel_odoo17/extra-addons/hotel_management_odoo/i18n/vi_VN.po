@@ -1,0 +1,2754 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hotel_management_odoo
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-01-10 08:17+0000\n"
+"PO-Revision-Date: 2025-01-10 08:17+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_fleet_booking_line__state
+#: model:ir.model.fields,help:hotel_management_odoo.field_food_booking_line__state
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking_line__state
+#: model:ir.model.fields,help:hotel_management_odoo.field_service_booking_line__state
+msgid " Status of the Order"
+msgstr "Tình trạng của đơn hàng"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.room_booking_detail_view_form
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.sale_order_detail_view_form
+msgid ""
+"<i class=\"fa fa-download mr-2\"/>\n"
+"                        Download PDF"
+msgstr ""
+"<i class=\"fa fa-download mr-2\"/>\n"
+"                        Tải PDF"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.room_booking_detail_view_form
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.sale_order_detail_view_form
+msgid ""
+"<i class=\"fa fa-download mr-2\"/>\n"
+"                        Download XLS"
+msgstr ""
+"<i class=\"fa fa-download mr-2\"/>\n"
+"                        Tải XLS"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__duration_visible
+msgid "A dummy field for Duration"
+msgstr "Một trường giả cho thời lượng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_amenity__description
+msgid "About"
+msgstr "Giới thiệu"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.maintenance_request_view_form
+msgid "Accept & Start"
+msgstr "Chấp nhận và bắt đầu"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__message_needaction
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_amenity__message_needaction
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__message_needaction
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_service__message_needaction
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__message_needaction
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__message_needaction
+msgid "Action Needed"
+msgstr "Đã hoạt động"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__activity_ids
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__activity_ids
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__activity_ids
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__activity_ids
+msgid "Activities"
+msgstr "Các hoạt động"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__activity_exception_decoration
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__activity_exception_decoration
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__activity_exception_decoration
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Hoạt động ngoại lệ"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__activity_state
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__activity_state
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__activity_state
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__activity_state
+msgid "Activity State"
+msgstr "Trạng thái hoạt động"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__activity_type_icon
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__activity_type_icon
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__activity_type_icon
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Biểu tượng loại hoạt động"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_maintenance_request__remarks
+msgid "Add Remarks"
+msgstr "Thêm chú thích"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_room__description
+msgid "Add description"
+msgstr "Thêm mô tả"
+
+#. module: hotel_management_odoo
+#: model:res.groups,name:hotel_management_odoo.hotel_group_admin
+msgid "Admin"
+msgstr "Quản trị"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.room_booking_view_form
+msgid "Allotted KM"
+msgstr "Được phân bổ"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.hotel_room_view_form
+msgid "Amenities"
+msgstr "Tiện nghi"
+
+#. module: hotel_management_odoo
+#: model:ir.ui.menu,name:hotel_management_odoo.trucquan_giaodien_phong_menu
+msgid "Room state"
+msgstr "Tình trạng phòng"
+
+#. module: hotel_management_odoo
+#: model:ir.actions.server,name:hotel_management_odoo.hotel_cleanup_room
+msgid "Clean up"
+msgstr "Dọn phòng"
+
+#. module: hotel_management_odoo
+#: model:ir.actions.server,name:hotel_management_odoo.hotel_cleaned_room
+msgid "Cleaned"
+msgstr "Đã dọn phòng"
+
+#. module: hotel_management_odoo
+#: model:ir.actions.server,name:hotel_management_odoo.hotel_repair_room
+msgid "Repair"
+msgstr "Sửa chữa"
+
+#. module: hotel_management_odoo
+#: model:ir.actions.server,name:hotel_management_odoo.hotel_repaired_room
+msgid "Repaired"
+msgstr "Đã sửa chữa"
+
+#. module: hotel_management_odoo
+#: model:ir.ui.menu,name:hotel_management_odoo.hotel_settings_menu
+msgid "General Settings"
+msgstr "Cài đặt chung"
+
+#. module: hotel_management_odoo
+#: model:ir.actions.act_window,name:hotel_management_odoo.hotel_amenity_action
+#: model:ir.ui.menu,name:hotel_management_odoo.hotel_amenity_menu
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.hotel_amenity_view_form
+msgid "Amenity"
+msgstr "Tiện nghi"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.report_sale_order
+msgid "Amount Total"
+msgstr "Tổng thanh toán"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__amount_untaxed_fleet
+msgid "Amount Untaxed"
+msgstr "Số tiền chưa tính thuế"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.cleaning_request_view_form
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.maintenance_request_view_form
+msgid "Assign Support"
+msgstr "Chỉ định hỗ trợ"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.cleaning_request_view_form
+msgid "Assign To"
+msgstr "Giao cho"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.maintenance_request_view_form
+msgid "Assign To Team"
+msgstr "Giao cho nhóm"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.maintenance_request_view_form
+msgid "Assign To User"
+msgstr "Chỉ định cho người dùng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__cleaning_request__state__assign
+msgid "Assigned"
+msgstr "Đã giao"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__assigned_id
+msgid "Assigned To"
+msgstr "Đã giao"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__assigned_user_id
+msgid "Assigned User"
+msgstr "Người dùng được chỉ định"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__message_attachment_count
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_amenity__message_attachment_count
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__message_attachment_count
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_service__message_attachment_count
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__message_attachment_count
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__message_attachment_count
+msgid "Attachment Count"
+msgstr "Số lượng đính kèm"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_room__num_person
+msgid "Automatically chooses the No. of Persons"
+msgstr "Tự động chọn số lượng người"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_room__floor_id
+msgid "Automatically selects the Floor"
+msgstr "Tự động chọn Tầng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_room__room_type
+msgid "Automatically selects the Room Type"
+msgstr "Tự động chọn Loại phòng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_room__user_id
+msgid "Automatically selects the manager"
+msgstr "Tự động chọn người quản lý"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__is_room_avail
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__hotel_room__status__available
+msgid "Available"
+msgstr "Phòng trống"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__is_room_avail
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__hotel_room__status__clean
+msgid "Clean"
+msgstr "Dọn phòng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__is_room_avail
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__hotel_room__status__repair
+msgid "Repair"
+msgstr "Sửa chữa"
+
+#. module: hotel_management_odoo
+#. odoo-javascript
+#: code:addons/hotel_management_odoo/static/src/js/dashboard_action.js:0
+#, python-format
+msgid "Available Room"
+msgstr "Phòng trống"
+
+#. module: hotel_management_odoo
+#. odoo-javascript
+#: code:addons/hotel_management_odoo/static/src/xml/dashboard_templates.xml:0
+#, python-format
+msgid "Available Rooms"
+msgstr "Các phòng trống"
+
+#. module: hotel_management_odoo
+#. odoo-javascript
+#: code:addons/hotel_management_odoo/static/src/js/dashboard_action.js:0
+#: code:addons/hotel_management_odoo/static/src/xml/dashboard_templates.xml:0
+#, python-format
+msgid "Available Vehicle"
+msgstr "Xe có sẵn"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_event_booking_line__booking_id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_fleet_booking_line__booking_id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_food_booking_line__booking_id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking_line__booking_id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_service_booking_line__booking_id
+msgid "Booking"
+msgstr "Đặt phòng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking_line__booking_line_visible
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_service_booking_line__booking_line_visible
+msgid "Booking Line Visible"
+msgstr "Đặt phòng có thể thấy"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_account_bank_statement_line__hotel_booking_id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_account_move__hotel_booking_id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_account_payment__hotel_booking_id
+msgid "Booking Reference"
+msgstr "Đặt phòng khác"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.room_booking_detail_view_form
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.room_booking_view_form
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.sale_order_detail_view_form
+msgid "Cancel"
+msgstr "Hủy bỏ"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__maintenance_request__state__cancel
+msgid "Canceled"
+msgstr "Đã hủy bỏ"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__room_booking__state__cancel
+msgid "Cancelled"
+msgstr "Đã hủy"
+
+#. module: hotel_management_odoo
+#. odoo-javascript
+#: code:addons/hotel_management_odoo/static/src/xml/dashboard_templates.xml:0
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__checkin_date
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking_line__checkin_date
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_sale_order_detail__checkin
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__room_booking__state__check_in
+#, python-format
+msgid "Check In"
+msgstr "Check In"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__checkout_date
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking_line__checkout_date
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_sale_order_detail__checkout
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__room_booking__state__check_out
+msgid "Check Out"
+msgstr "Check Out"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__need_event
+msgid "Check if a Event to be added with the Booking"
+msgstr "Kiểm tra xem Sự kiện có được thêm vào Đặt chỗ không"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__need_fleet
+msgid "Check if a Fleet to be added with the Booking"
+msgstr "Kiểm tra xem có nên thêm Đội tàu vào Đặt chỗ không"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__need_food
+msgid "Check if a Food to be added with the Booking"
+msgstr "Kiểm tra xem có cần thêm Thực phẩm vào Đặt chỗ không"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__need_service
+msgid "Check if a Service to be added with the Booking"
+msgstr "Kiểm tra xem có Dịch vụ nào được thêm vào Đặt phòng không"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_room__is_room_avail
+msgid "Check if the room is available"
+msgstr "Kiểm tra xem phòng có sẵn không"
+
+#. module: hotel_management_odoo
+#. odoo-javascript
+#: code:addons/hotel_management_odoo/static/src/js/dashboard_action.js:0
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.report_room_booking
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.report_sale_order
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.room_booking_view_form
+#, python-format
+msgid "Check-In"
+msgstr "Check-In"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.report_room_booking
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.report_sale_order
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.room_booking_view_form
+msgid "Check-Out"
+msgstr "Check-Out"
+
+#. module: hotel_management_odoo
+#. odoo-python
+#: code:addons/hotel_management_odoo/wizard/room_booking_detail.py:0
+#: code:addons/hotel_management_odoo/wizard/sale_order_detail.py:0
+#, python-format
+msgid "Check-in date should be less than Check-out date"
+msgstr "Ngày nhận phòng phải nhỏ hơn ngày trả phòng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking_detail__checkin
+msgid "Checkin"
+msgstr "Checkin"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking_detail__checkout
+msgid "Checkout"
+msgstr "Checkout"
+
+#. module: hotel_management_odoo
+#. odoo-python
+#: code:addons/hotel_management_odoo/models/room_booking_line.py:0
+#, python-format
+msgid "Checkout must be greater or equal checkin date"
+msgstr "Ngày thanh toán phải lớn hơn hoặc bằng ngày thanh toán"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_maintenance_request__room_maintenance_ids
+msgid "Choose Room Maintenance"
+msgstr "Chọn phòng bảo trì"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_maintenance_request__support_team_ids
+msgid "Choose Support Team"
+msgstr "Chọn nhóm hỗ trợ"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking_detail__room_id
+msgid "Choose The Room"
+msgstr "Chọn phòng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_maintenance_request__vehicle_maintenance_id
+msgid "Choose Vehicle"
+msgstr "Chọn xe"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_event_booking_line__booking_id
+msgid "Choose room booking reference"
+msgstr "Chọn tham chiếu đặt phòng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_account_bank_statement_line__hotel_booking_id
+#: model:ir.model.fields,help:hotel_management_odoo.field_account_move__hotel_booking_id
+#: model:ir.model.fields,help:hotel_management_odoo.field_account_payment__hotel_booking_id
+msgid "Choose the BookingReference"
+msgstr "Chọn tham chiếu đặt chỗ"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking_detail__checkin
+#: model:ir.model.fields,help:hotel_management_odoo.field_sale_order_detail__checkin
+msgid "Choose the Checkin Date"
+msgstr "Chọn ngày nhận phòng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking_detail__checkout
+#: model:ir.model.fields,help:hotel_management_odoo.field_sale_order_detail__checkout
+msgid "Choose the Checkout Date"
+msgstr "Chọn ngày thanh toán"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__company_id
+msgid "Choose the Company"
+msgstr "Chọn công ty/cá nhân"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_event_booking_line__event_id
+msgid "Choose the Event"
+msgstr "Chọn sự kiện"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_cleaning_team__team_head_id
+msgid "Choose the Team Head"
+msgstr "Chọn Trưởng nhóm"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_event_booking_line__ticket_id
+msgid "Choose the Ticket Type"
+msgstr "Chọn loại vé"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_account_move_line__product_type
+msgid "Choose the product type"
+msgstr "Chọn loại sản phẩm"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_cleaning_request__room_id
+msgid "Choose the room"
+msgstr "Chọn phòng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_cleaning_request__team_id
+msgid "Choose the team"
+msgstr "Chọn đội"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_cleaning_request__cleaning_type
+msgid "Choose what is to be cleaned"
+msgstr "Chọn những gì cần được làm sạch"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__cleaning_request__state__ongoing
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__maintenance_request__type__cleaning
+#: model:ir.ui.menu,name:hotel_management_odoo.hotel_config_menu_cleaning
+msgid "Cleaning"
+msgstr "Vệ sinh"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__cleaning_maintenance
+msgid "Cleaning Maintenance"
+msgstr "Vệ sinh bảo trì"
+
+#. module: hotel_management_odoo
+#: model:ir.actions.act_window,name:hotel_management_odoo.cleaning_request_action
+#: model:ir.model,name:hotel_management_odoo.model_cleaning_request
+#: model:ir.ui.menu,name:hotel_management_odoo.cleaning_request_menu
+msgid "Cleaning Request"
+msgstr "Yêu cầu vệ sinh"
+
+#. module: hotel_management_odoo
+#: model:ir.actions.act_window,name:hotel_management_odoo.cleaning_team_action
+#: model:ir.model,name:hotel_management_odoo.model_cleaning_team
+#: model:ir.ui.menu,name:hotel_management_odoo.cleaning_team_menu
+msgid "Cleaning Team"
+msgstr "Đội vệ sinh"
+
+#. module: hotel_management_odoo
+#: model:res.groups,name:hotel_management_odoo.cleaning_team_group_head
+msgid "Cleaning Team Head"
+msgstr "Trưởng nhóm vệ sinh"
+
+#. module: hotel_management_odoo
+#: model:res.groups,name:hotel_management_odoo.cleaning_team_group_user
+msgid "Cleaning Team User"
+msgstr "Người dùng đội vệ sinh"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__cleaning_type
+msgid "Cleaning Type"
+msgstr "Loại vệ sinh"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_cleaning_request__vehicle_id
+msgid "Cleaning request from vehicle"
+msgstr "Yêu cầu vệ sinh từ xe"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_cleaning_request__hotel
+msgid "Cleaning request space in hotel"
+msgstr "Yêu cầu dọn dẹp không gian trong khách sạn"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__company_id
+msgid "Company"
+msgstr "Công ty"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.maintenance_request_view_form
+msgid "Complete"
+msgstr "Hoàn thành"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__cleaning_request__state__done
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.cleaning_request_view_form
+msgid "Completed"
+msgstr "Đã hoàn thành"
+
+#. module: hotel_management_odoo
+#: model:ir.ui.menu,name:hotel_management_odoo.hotel_config_menu
+msgid "Configuration"
+msgstr "Cài đặt"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.room_booking_view_form
+msgid "Create Invoice"
+msgstr "Tạo hóa đơn"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.room_booking_view_form
+msgid "Print bill"
+msgstr "In bill"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__create_uid
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_team__create_uid
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_event_booking_line__create_uid
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_fleet_booking_line__create_uid
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_food_booking_line__create_uid
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_amenity__create_uid
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_floor__create_uid
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__create_uid
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_service__create_uid
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__create_uid
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_team__create_uid
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__create_uid
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking_detail__create_uid
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking_line__create_uid
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_sale_order_detail__create_uid
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_service_booking_line__create_uid
+msgid "Created by"
+msgstr "Được tạo bởi"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__create_date
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_team__create_date
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_event_booking_line__create_date
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_fleet_booking_line__create_date
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_food_booking_line__create_date
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_amenity__create_date
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_floor__create_date
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__create_date
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_service__create_date
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__create_date
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_team__create_date
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__create_date
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking_detail__create_date
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking_line__create_date
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_sale_order_detail__create_date
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_service_booking_line__create_date
+msgid "Created on"
+msgstr "Được tạo vào"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__date_order
+msgid ""
+"Creation date of draft/sent orders, Confirmation date of confirmed orders"
+msgstr ""
+"Ngày tạo lệnh nháp/lệnh đã gửi, Ngày xác nhận lệnh đã xác nhận"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_event_booking_line__currency_id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_fleet_booking_line__currency_id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_food_booking_line__currency_id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__currency_id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking_line__currency_id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_service_booking_line__currency_id
+msgid "Currency"
+msgstr "Tiền tệ"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__partner_id
+msgid "Customer"
+msgstr "Khách hàng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__taxes_ids
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_service__taxes_ids
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.hotel_room_view_form
+msgid "Customer Taxes"
+msgstr "Thuế của khách hàng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__partner_id
+msgid "Customers of hotel"
+msgstr "Khách hàng của khách sạn"
+
+#. module: hotel_management_odoo
+#: model:ir.actions.client,name:hotel_management_odoo.hotel_dashboard_action
+#: model:ir.ui.menu,name:hotel_management_odoo.hotel_dashboard_menu
+msgid "Dashboard"
+msgstr "Bảng điều khiển"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__date
+msgid "Date"
+msgstr "Ngày"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__checkin_date
+msgid "Date of Checkin"
+msgstr "Ngày nhận phòng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__checkout_date
+msgid "Date of Checkout"
+msgstr "Ngày trả phòng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_maintenance_request__date
+msgid "Date of maintenance request"
+msgstr "Ngày yêu cầu bảo trì"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_fleet_booking_line__tax_ids
+msgid "Default taxes used when renting the fleetmodels."
+msgstr "Thuế mặc định được áp dụng khi cho thuê đội xe."
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_event_booking_line__tax_ids
+msgid "Default taxes used when selling the eventtickets."
+msgstr "Thuế mặc định được sử dụng khi bán vé sự kiện."
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_food_booking_line__tax_ids
+msgid "Default taxes used when selling the food products."
+msgstr "Thuế mặc định được sử dụng khi bán các sản phẩm thực phẩm."
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_room__taxes_ids
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking_line__tax_ids
+msgid "Default taxes used when selling the room."
+msgstr "Thuế mặc định được áp dụng khi bán phòng."
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_service__taxes_ids
+msgid "Default taxes used when selling the service product."
+msgstr "Thuế mặc định được sử dụng khi bán sản phẩm dịch vụ."
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_service_booking_line__tax_ids
+msgid "Default taxes used when selling the services."
+msgstr "Thuế mặc định được sử dụng khi bán dịch vụ."
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_room__uom_id
+msgid "Default unit of measure used for all stock operations."
+msgstr "Đơn vị đo lường mặc định được sử dụng cho tất cả các hoạt động kho."
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__description
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_event_booking_line__description
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_fleet_booking_line__description
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_food_booking_line__description
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__description
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_service_booking_line__description
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.hotel_room_view_form
+msgid "Description"
+msgstr "Mô tả"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_cleaning_request__description
+msgid "Description about the cleaning"
+msgstr "Mô tả về việc vệ sinh"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_food_booking_line__description
+msgid "Description of Food Product"
+msgstr "Mô tả sản phẩm thực phẩm"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_fleet_booking_line__description
+msgid "Description of Vehicle"
+msgstr "Mô tả về xe"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_service_booking_line__description
+msgid "Description of the Service"
+msgstr "Mô tả dịch vụ"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.hotel_room_view_form
+msgid "Descriptions"
+msgstr "Mô tả"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_event_booking_line__description
+msgid "Detailed description of the event"
+msgstr "Mô tả chi tiết về sự kiện"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__display_name
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_team__display_name
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_event_booking_line__display_name
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_fleet_booking_line__display_name
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_food_booking_line__display_name
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_amenity__display_name
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_floor__display_name
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__display_name
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_service__display_name
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__display_name
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_team__display_name
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__display_name
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking_detail__display_name
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking_line__display_name
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_sale_order_detail__display_name
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_service_booking_line__display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__maintenance_request__state__done
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__room_booking__state__done
+msgid "Done"
+msgstr "Xong"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__hotel_room__room_type__dormitory
+msgid "Dormitory"
+msgstr "Dormitory"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__hotel_room__room_type__double
+msgid "Double"
+msgstr "Double"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__cleaning_request__state__draft
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__maintenance_request__state__draft
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__room_booking__state__draft
+msgid "Draft"
+msgstr "Bản nháp"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__duration_visible
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking_line__uom_qty
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.room_booking_view_form
+msgid "Duration"
+msgstr "Khoảng thời gian"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__duration
+msgid "Duration in Days"
+msgstr "Thời gian tính bằng ngày"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_event_booking_line__event_id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__event_line_ids
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__account_move_line__product_type__event
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.room_booking_view_form
+msgid "Event"
+msgstr "Sự kiện"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.room_booking_view_form
+msgid "Event Lines"
+msgstr "Các dòng sự kiện"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__amount_taxed_event
+msgid "Event Tax"
+msgstr "Thuế sự kiện"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__amount_untaxed_event
+msgid "Event Untaxed"
+msgstr "Sự kiện miễn thuế"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.room_booking_view_form
+msgid "Events"
+msgstr "Các sự kiện"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__account_move_line__product_type__fleet
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.room_booking_view_form
+msgid "Fleet"
+msgstr "Hạm đội"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.room_booking_view_form
+msgid "Fleet Lines"
+msgstr "Dòng tàu"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__amount_taxed_fleet
+msgid "Fleet Tax"
+msgstr "Thuế đội tàu"
+
+#. module: hotel_management_odoo
+#: model:ir.model,name:hotel_management_odoo.model_hotel_floor
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__floor_id
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.hotel_room_view_form
+msgid "Floor"
+msgstr "Tầng"
+
+#. module: hotel_management_odoo
+#: model:ir.actions.act_window,name:hotel_management_odoo.hotel_floor_action
+#: model:ir.ui.menu,name:hotel_management_odoo.hotel_floor_menu
+msgid "Floors"
+msgstr "Các tầng"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.room_booking_view_form
+msgid "Folio"
+msgstr "Tập tài liệu"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__name
+msgid "Folio Number"
+msgstr "Mã số tài liệu"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__message_follower_ids
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_amenity__message_follower_ids
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__message_follower_ids
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_service__message_follower_ids
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__message_follower_ids
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__message_follower_ids
+msgid "Followers"
+msgstr "Người theo dõi"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__message_partner_ids
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_amenity__message_partner_ids
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__message_partner_ids
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_service__message_partner_ids
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__message_partner_ids
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Người theo dõi (Đối tác)"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_cleaning_request__activity_type_icon
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_room__activity_type_icon
+#: model:ir.model.fields,help:hotel_management_odoo.field_maintenance_request__activity_type_icon
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Biểu tượng Font awesome ví dụ fa-tasks"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__food_order_line_ids
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__account_move_line__product_type__food
+#: model:ir.ui.menu,name:hotel_management_odoo.food_menu
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.room_booking_view_form
+msgid "Food"
+msgstr "Đồ ăn"
+
+#. module: hotel_management_odoo
+#. odoo-javascript
+#: code:addons/hotel_management_odoo/static/src/js/dashboard_action.js:0
+#: code:addons/hotel_management_odoo/static/src/xml/dashboard_templates.xml:0
+#, python-format
+msgid "Food Items"
+msgstr "Các mặt hàng thực phẩm"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.room_booking_view_form
+msgid "Food Lines"
+msgstr "Dòng thực phẩm"
+
+#. module: hotel_management_odoo
+#. odoo-javascript
+#: code:addons/hotel_management_odoo/static/src/js/dashboard_action.js:0
+#: code:addons/hotel_management_odoo/static/src/xml/dashboard_templates.xml:0
+#, python-format
+msgid "Food Orders"
+msgstr "Đơn đặt hàng thực phẩm"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__amount_taxed_food
+msgid "Food Tax"
+msgstr "Thuế thực phẩm"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__amount_untaxed_food
+msgid "Food Untaxed"
+msgstr "Thực phẩm không bị đánh thuế"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__food_order_line_ids
+msgid ""
+"Food details provided to Customer and it will included in the main invoice."
+msgstr ""
+"Chi tiết về thực phẩm được cung cấp cho Khách hàng và sẽ được ghi vào hóa đơn chính."
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_cleaning_request__team_member_ids
+#: model:ir.model.fields,help:hotel_management_odoo.field_maintenance_request__team_member_ids
+msgid "For filtering Users"
+msgstr "Để lọc Người dùng"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.report_room_booking
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.report_sale_order
+msgid "Guest Name"
+msgstr "Tên khách"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__has_message
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_amenity__has_message
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__has_message
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_service__has_message
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__has_message
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__has_message
+msgid "Has Message"
+msgstr "Có tin nhắn"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__head_id
+msgid "Head"
+msgstr "Cái đầu"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_cleaning_request__head_id
+msgid "Head of cleaning team"
+msgstr "Trưởng nhóm vệ sinh"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_maintenance_request__team_head_id
+msgid "Head of the maintenance team"
+msgstr "Trưởng nhóm bảo trì"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__hotel
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__cleaning_request__cleaning_type__hotel
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__maintenance_request__type__hotel
+msgid "Hotel"
+msgstr "Khách sạn"
+
+#. module: hotel_management_odoo
+#: model:ir.module.category,description:hotel_management_odoo.module_category_hotel_management
+msgid "Hotel Access Groups"
+msgstr "Nhóm truy cập khách sạn"
+
+#. module: hotel_management_odoo
+#: model:ir.model,name:hotel_management_odoo.model_hotel_amenity
+msgid "Hotel Amenity"
+msgstr "Tiện nghi khách sạn"
+
+#. module: hotel_management_odoo
+#: model:ir.model,name:hotel_management_odoo.model_event_booking_line
+msgid "Hotel Event Line"
+msgstr "Dòng sự kiện khách sạn"
+
+#. module: hotel_management_odoo
+#: model:ir.model,name:hotel_management_odoo.model_fleet_booking_line
+msgid "Hotel Fleet Line"
+msgstr "Khách sạn Fleet Line"
+
+#. module: hotel_management_odoo
+#: model:ir.model,name:hotel_management_odoo.model_room_booking_line
+msgid "Hotel Folio Line"
+msgstr "Khách sạn Folio Line"
+
+#. module: hotel_management_odoo
+#: model:ir.model,name:hotel_management_odoo.model_food_booking_line
+msgid "Hotel Food Line"
+msgstr "Dòng thực phẩm khách sạn"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__hotel_maintenance
+msgid "Hotel Maintenance"
+msgstr "Bảo trì khách sạn"
+
+#. module: hotel_management_odoo
+#: model:ir.module.category,name:hotel_management_odoo.module_category_hotel_management
+#: model:ir.ui.menu,name:hotel_management_odoo.hotel_management_menu_root
+msgid "Hotel Management"
+msgstr "Quản Lý Khách Sạn"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__hotel_policy
+msgid "Hotel Policy"
+msgstr "Chính sách khách sạn"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.hotel_room_view_form
+msgid "Hotel Room"
+msgstr "Phòng khách sạn"
+
+#. module: hotel_management_odoo
+#: model:ir.model,name:hotel_management_odoo.model_room_booking
+msgid "Hotel Room Reservation"
+msgstr "Đặt phòng khách sạn"
+
+#. module: hotel_management_odoo
+#: model:ir.model,name:hotel_management_odoo.model_hotel_service
+msgid "Hotel Service"
+msgstr "Dịch vụ khách sạn"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__event_line_ids
+msgid "Hotel event reservation detail."
+msgstr "Chi tiết đặt phòng sự kiện tại khách sạn."
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__vehicle_line_ids
+msgid "Hotel fleet reservation detail."
+msgstr "Chi tiết đặt phòng khách sạn."
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__hotel_policy
+msgid ""
+"Hotel policy for payment that either the guest has to pay at booking time, "
+"check-in or check-out time."
+msgstr ""
+"Chính sách của khách sạn về việc thanh toán là khách phải thanh toán tại thời điểm đặt phòng, "
+"thời điểm nhận phòng hoặc trả phòng."
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__room_line_ids
+msgid "Hotel room reservation detail."
+msgstr "Chi tiết đặt phòng khách sạn."
+
+#. module: hotel_management_odoo
+#: model:ir.model,name:hotel_management_odoo.model_service_booking_line
+msgid "Hotel service Line"
+msgstr "Dịch vụ khách sạn Line"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__service_line_ids
+msgid ""
+"Hotel services details provided toCustomer and it will included in the main "
+"Invoice."
+msgstr ""
+"Chi tiết dịch vụ khách sạn được cung cấp cho Khách hàng và sẽ được bao gồm trong "
+"Hóa đơn chính."
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_team__id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_event_booking_line__id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_fleet_booking_line__id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_food_booking_line__id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_amenity__id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_floor__id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_service__id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_team__id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking_detail__id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking_line__id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_sale_order_detail__id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_service_booking_line__id
+msgid "ID"
+msgstr "ID"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__activity_exception_icon
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_amenity__icon
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__activity_exception_icon
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__activity_exception_icon
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__activity_exception_icon
+msgid "Icon"
+msgstr "Icon"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_cleaning_request__activity_exception_icon
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_room__activity_exception_icon
+#: model:ir.model.fields,help:hotel_management_odoo.field_maintenance_request__activity_exception_icon
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Biểu tượng để chỉ hoạt động ngoại lệ."
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__account_move
+msgid "Id of the invoice created"
+msgstr "Id của hóa đơn được tạo"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking_line__booking_line_visible
+msgid "If True, then Booking Line will be visible"
+msgstr "Nếu Đúng, thì Dòng Đặt chỗ sẽ hiển thị"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_cleaning_request__message_needaction
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_amenity__message_needaction
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_room__message_needaction
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_service__message_needaction
+#: model:ir.model.fields,help:hotel_management_odoo.field_maintenance_request__message_needaction
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Nếu được chọn, bạn sẽ cần chú ý đến tin nhắn mới."
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_cleaning_request__message_has_error
+#: model:ir.model.fields,help:hotel_management_odoo.field_cleaning_request__message_has_sms_error
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_amenity__message_has_error
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_amenity__message_has_sms_error
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_room__message_has_error
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_room__message_has_sms_error
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_service__message_has_error
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_service__message_has_sms_error
+#: model:ir.model.fields,help:hotel_management_odoo.field_maintenance_request__message_has_error
+#: model:ir.model.fields,help:hotel_management_odoo.field_maintenance_request__message_has_sms_error
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__message_has_error
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Nếu được chọn, một số tin nhắn sẽ có lỗi gửi."
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_service_booking_line__booking_line_visible
+msgid "If true, Booking line will be visible"
+msgstr "Nếu đúng, dòng Đặt chỗ sẽ hiển thị"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__pricelist_id
+msgid "If you change the pricelist, only newly added lines will be affected."
+msgstr "Nếu bạn thay đổi bảng giá, chỉ những dòng mới được thêm vào mới bị ảnh hưởng."
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_amenity__icon
+msgid "Image of the amenity"
+msgstr "Hình ảnh của tiện ích"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_room__room_image
+msgid "Image of the room"
+msgstr "Hình ảnh của căn phòng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_food_booking_line__food_id
+msgid "Indicates the Food Product"
+msgstr "Chỉ ra Sản phẩm Thực phẩm"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking_line__booking_id
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking_line__room_id
+msgid "Indicates the Room"
+msgstr "Chỉ ra phòng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_service_booking_line__booking_id
+msgid "Indicates the Room Booking"
+msgstr "Chỉ ra việc đặt phòng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_service_booking_line__service_id
+msgid "Indicates the Service"
+msgstr "Chỉ ra Dịch vụ"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_fleet_booking_line__fleet_id
+msgid "Indicates the Vehicle"
+msgstr "Chỉ ra Xe"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__hotel_invoice_id
+msgid "Indicates the invoice"
+msgstr "Chỉ ra hóa đơn"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.hotel_room_view_form
+msgid "Information"
+msgstr "Thông tin"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__hotel_invoice_id
+msgid "Invoice"
+msgstr "Hóa đơn"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__user_id
+msgid "Invoice Address"
+msgstr "Địa chỉ hóa đơn"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__invoice_button_visible
+msgid "Invoice Button Display"
+msgstr "Hiển thị nút hóa đơn"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__invoice_count
+msgid "Invoice Count"
+msgstr "Số lượng hóa đơn"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__account_move
+msgid "Invoice Id"
+msgstr "Id hóa đơn"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__invoice_status
+msgid "Invoice Status"
+msgstr "Trạng thái hóa đơn"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__invoice_button_visible
+msgid "Invoice button will be visible if this button is True"
+msgstr "Nút hóa đơn sẽ hiển thị nếu nút này là Đúng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__room_booking__invoice_status__invoiced
+msgid "Invoiced"
+msgstr "Đã xuất hóa đơn"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.room_booking_view_form
+msgid "Invoices"
+msgstr "Hóa đơn"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__is_checkin
+msgid "Is Checkin"
+msgstr "Đang kiểm tra"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__message_is_follower
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_amenity__message_is_follower
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__message_is_follower
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_service__message_is_follower
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__message_is_follower
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__message_is_follower
+msgid "Is Follower"
+msgstr "Là Người Theo Dõi"
+
+#. module: hotel_management_odoo
+#: model:ir.model,name:hotel_management_odoo.model_account_move
+msgid "Journal Entry"
+msgstr "Bút toán"
+
+#. module: hotel_management_odoo
+#: model:ir.model,name:hotel_management_odoo.model_account_move_line
+msgid "Journal Item"
+msgstr "Hạng mục bút toán"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__write_uid
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_team__write_uid
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_event_booking_line__write_uid
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_fleet_booking_line__write_uid
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_food_booking_line__write_uid
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_amenity__write_uid
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_floor__write_uid
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__write_uid
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_service__write_uid
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__write_uid
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_team__write_uid
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__write_uid
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking_detail__write_uid
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking_line__write_uid
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_sale_order_detail__write_uid
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_service_booking_line__write_uid
+msgid "Last Updated by"
+msgstr "Cập nhật lần cuối bởi"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__write_date
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_team__write_date
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_event_booking_line__write_date
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_fleet_booking_line__write_date
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_food_booking_line__write_date
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_amenity__write_date
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_floor__write_date
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__write_date
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_service__write_date
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__write_date
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_team__write_date
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__write_date
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking_detail__write_date
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking_line__write_date
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_sale_order_detail__write_date
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_service_booking_line__write_date
+msgid "Last Updated on"
+msgstr "Cập nhật lần cuối vào"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_maintenance_team__user_id
+msgid "Leader of Team"
+msgstr "Trưởng nhóm"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_room__room_amenities_ids
+msgid "List of room amenities."
+msgstr "Danh sách các tiện nghi trong phòng."
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.cleaning_request_view_form
+msgid "Maintain Request"
+msgstr "Duy trì yêu cầu"
+
+#. module: hotel_management_odoo
+#: model:ir.ui.menu,name:hotel_management_odoo.maintenance_menu
+msgid "Maintenance"
+msgstr "BẢO TRÌ"
+
+#. module: hotel_management_odoo
+#: model:ir.actions.act_window,name:hotel_management_odoo.maintenance_request_action
+#: model:ir.model,name:hotel_management_odoo.model_maintenance_request
+#: model:ir.ui.menu,name:hotel_management_odoo.maintenance_request_menu
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.room_booking_view_form
+msgid "Maintenance Request"
+msgstr "Yêu cầu bảo trì"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__maintenance_request_sent
+msgid "Maintenance Request sentor Not"
+msgstr "Yêu cầu bảo trì sentor Không"
+
+#. module: hotel_management_odoo
+#: model:ir.actions.act_window,name:hotel_management_odoo.maintenance_team_action
+#: model:ir.model,name:hotel_management_odoo.model_maintenance_team
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__team_id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_team__name
+#: model:ir.ui.menu,name:hotel_management_odoo.maintenance_team_menu
+msgid "Maintenance Team"
+msgstr "Đội bảo trì"
+
+#. module: hotel_management_odoo
+#: model:res.groups,name:hotel_management_odoo.maintenance_team_group_leader
+msgid "Maintenance Team Leader"
+msgstr "Trưởng nhóm bảo trì"
+
+#. module: hotel_management_odoo
+#: model:res.groups,name:hotel_management_odoo.maintenance_team_group_user
+msgid "Maintenance Team User"
+msgstr "Người dùng nhóm bảo trì"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_floor__user_id
+msgid "Manager"
+msgstr "Quản lý"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_floor__user_id
+msgid "Manager of the Floor"
+msgstr "Quản lý tầng"
+
+#. module: hotel_management_odoo
+#: model:ir.actions.act_window,name:hotel_management_odoo.fleet_vehicle_model_brand_action
+#: model:ir.ui.menu,name:hotel_management_odoo.fleet_vehicle_model_brand_menu
+msgid "Manufacturers"
+msgstr "Nhà sản xuất"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_team__member_ids
+msgid "Member"
+msgstr "Thành viên"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_team__member_ids
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.cleaning_team_view_form
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.maintenance_team_view_form
+msgid "Members"
+msgstr "Thành viên"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_maintenance_team__member_ids
+msgid "Members of the Team"
+msgstr "Thành viên của đội"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__message_has_error
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_amenity__message_has_error
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__message_has_error
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_service__message_has_error
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__message_has_error
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__message_has_error
+msgid "Message Delivery error"
+msgstr "Lỗi gửi tin nhắn"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__message_ids
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_amenity__message_ids
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__message_ids
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_service__message_ids
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__message_ids
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__message_ids
+msgid "Messages"
+msgstr "Tin nhắn"
+
+#. module: hotel_management_odoo
+#: model:ir.model,name:hotel_management_odoo.model_fleet_vehicle_model
+msgid "Model of a vehicle"
+msgstr "Mẫu của phương tiện"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__my_activity_date_deadline
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__my_activity_date_deadline
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__my_activity_date_deadline
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Hạn chót hoạt động của tôi"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_amenity__name
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_floor__name
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__name
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.hotel_room_view_form
+msgid "Name"
+msgstr "Tên"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__name
+msgid "Name of Folio"
+msgstr "Tên của Folio"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_room__name
+msgid "Name of the Room"
+msgstr "Tên phòng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_cleaning_team__name
+msgid "Name of the Team"
+msgstr "Tên của đội"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_amenity__name
+msgid "Name of the amenity"
+msgstr "Tên của tiện ích"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_floor__name
+msgid "Name of the floor"
+msgstr "Tên của tầng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_maintenance_team__name
+msgid "Name of the maintenance team"
+msgstr "Tên của nhóm bảo trì"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_service__name
+msgid "Name of the service"
+msgstr "Tên của dịch vụ"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__need_event
+msgid "Need Event"
+msgstr "Cần Sự kiện"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__need_food
+msgid "Need Food"
+msgstr "Cần Thức Ăn"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__need_service
+msgid "Need Service"
+msgstr "Cần dịch vụ"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__need_fleet
+msgid "Need Vehicle"
+msgstr "Cần xe"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__activity_calendar_event_id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__activity_calendar_event_id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__activity_calendar_event_id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "Sự kiện Lịch hoạt động tiếp theo"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__activity_date_deadline
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__activity_date_deadline
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__activity_date_deadline
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Hạn chót cho hoạt động tiếp theo"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__activity_summary
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__activity_summary
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__activity_summary
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__activity_summary
+msgid "Next Activity Summary"
+msgstr "Tóm tắt hoạt động tiếp theo"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__activity_type_id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__activity_type_id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__activity_type_id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__activity_type_id
+msgid "Next Activity Type"
+msgstr "Loại hoạt động tiếp theo"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__room_booking__invoice_status__no_invoice
+msgid "Nothing To Invoice"
+msgstr "Không có gì để lập hóa đơn"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__num_person
+msgid "Number Of Persons"
+msgstr "Số lượng người"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__message_needaction_counter
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_amenity__message_needaction_counter
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__message_needaction_counter
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_service__message_needaction_counter
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__message_needaction_counter
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Số lượng hành động"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__duration
+msgid ""
+"Number of days which will automatically count from the check-in and check-"
+"out date."
+msgstr ""
+"Số ngày sẽ tự động tính từ ngày nhận phòng và ngày trả phòng."
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__message_has_error_counter
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_amenity__message_has_error_counter
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__message_has_error_counter
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_service__message_has_error_counter
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__message_has_error_counter
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__message_has_error_counter
+msgid "Number of errors"
+msgstr "Số lượng lỗi"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_cleaning_request__message_needaction_counter
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_amenity__message_needaction_counter
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_room__message_needaction_counter
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_service__message_needaction_counter
+#: model:ir.model.fields,help:hotel_management_odoo.field_maintenance_request__message_needaction_counter
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Số lượng tin nhắn yêu cầu hành động"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_cleaning_request__message_has_error_counter
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_amenity__message_has_error_counter
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_room__message_has_error_counter
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_service__message_has_error_counter
+#: model:ir.model.fields,help:hotel_management_odoo.field_maintenance_request__message_has_error_counter
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Số lượng tin nhắn có lỗi gửi"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__hotel_room__status__occupied
+msgid "Occupied"
+msgstr "Có người"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__room_booking__hotel_policy__prepaid
+msgid "On Booking"
+msgstr "Khi đặt phòng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__room_booking__hotel_policy__manual
+msgid "On Check In"
+msgstr "Khi nhận phòng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__room_booking__hotel_policy__picking
+msgid "On Checkout"
+msgstr "Khi thanh toán"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__maintenance_request__state__ongoing
+msgid "Ongoing"
+msgstr "Đang diễn ra"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__date_order
+msgid "Order Date"
+msgstr "Ngày đặt hàng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_event_booking_line__state
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_fleet_booking_line__state
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_food_booking_line__state
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking_line__state
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_service_booking_line__state
+msgid "Order Status"
+msgstr "Trạng thái đơn hàng"
+
+#. module: hotel_management_odoo
+#. odoo-javascript
+#: code:addons/hotel_management_odoo/static/src/js/dashboard_action.js:0
+#: code:addons/hotel_management_odoo/static/src/xml/dashboard_templates.xml:0
+#, python-format
+msgid "Pending Events"
+msgstr "Sự kiện đang chờ xử lý"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__maintenance_request__state__verify
+msgid "Pending For Verify"
+msgstr "Đang chờ xác minh"
+
+#. module: hotel_management_odoo
+#. odoo-javascript
+#: code:addons/hotel_management_odoo/static/src/xml/dashboard_templates.xml:0
+#, python-format
+msgid "Pending Payment"
+msgstr "Đang chờ thanh toán"
+
+#. module: hotel_management_odoo
+#. odoo-python
+#: code:addons/hotel_management_odoo/models/maintenance_request.py:0
+#, python-format
+msgid "Please Add remark"
+msgstr "Vui lòng thêm nhận xét"
+
+#. module: hotel_management_odoo
+#. odoo-python
+#: code:addons/hotel_management_odoo/models/room_booking.py:0
+#: code:addons/hotel_management_odoo/models/room_booking.py:0
+#: code:addons/hotel_management_odoo/models/room_booking.py:0
+#: code:addons/hotel_management_odoo/models/room_booking.py:0
+#, python-format
+msgid "Please Enter Room Details"
+msgstr "Vui lòng nhập thông tin chi tiết phòng"
+
+#. module: hotel_management_odoo
+#. odoo-python
+#: code:addons/hotel_management_odoo/models/room_booking.py:0
+#, python-format
+msgid "Please Enter time zone in user settings."
+msgstr "Vui lòng nhập múi giờ vào cài đặt người dùng."
+
+#. module: hotel_management_odoo
+#. odoo-python
+#: code:addons/hotel_management_odoo/models/maintenance_request.py:0
+#, python-format
+msgid "Please assign a Team"
+msgstr "Vui lòng chỉ định một đội"
+
+#. module: hotel_management_odoo
+#. odoo-python
+#: code:addons/hotel_management_odoo/models/maintenance_request.py:0
+#, python-format
+msgid "Please assign a User"
+msgstr "Vui lòng chỉ định Người dùng"
+
+#. module: hotel_management_odoo
+#. odoo-python
+#: code:addons/hotel_management_odoo/models/cleaning_request.py:0
+#, python-format
+msgid "Please choose a support"
+msgstr "Vui lòng chọn hỗ trợ"
+
+#. module: hotel_management_odoo
+#. odoo-python
+#: code:addons/hotel_management_odoo/models/maintenance_request.py:0
+#, python-format
+msgid "Please choose support"
+msgstr "Vui lòng chọn hỗ trợ"
+
+#. module: hotel_management_odoo
+#. odoo-python
+#: code:addons/hotel_management_odoo/models/cleaning_request.py:0
+#: code:addons/hotel_management_odoo/models/maintenance_request.py:0
+#, python-format
+msgid "Please enter the reason"
+msgstr "Vui lòng nhập lý do"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_event_booking_line__price_unit
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_food_booking_line__price_unit
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_service__unit_price
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_service_booking_line__price_unit
+msgid "Price"
+msgstr "Giá"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_service__unit_price
+msgid "Price of the service"
+msgstr "Giá của dịch vụ"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_fleet_vehicle_model__price_per_km
+msgid "Price/KM"
+msgstr "Giá/KM"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__pricelist_id
+msgid "Pricelist"
+msgstr "Bảng giá"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_food_booking_line__food_id
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.room_booking_view_form
+msgid "Product"
+msgstr "Sản phẩm"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_account_move_line__product_type
+msgid "Product Type"
+msgstr "Loại sản phẩm"
+
+#. module: hotel_management_odoo
+#: model:ir.actions.act_window,name:hotel_management_odoo.lunch_product_action
+#: model:ir.ui.menu,name:hotel_management_odoo.lunch_product_menu
+msgid "Products"
+msgstr "Các sản phẩm"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_food_booking_line__uom_qty
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_service_booking_line__uom_qty
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.room_booking_view_form
+msgid "Qty"
+msgstr "Số lượng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_event_booking_line__uom_qty
+msgid "Quantity"
+msgstr "Số lượng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__rating_ids
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_amenity__rating_ids
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__rating_ids
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_service__rating_ids
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__rating_ids
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__rating_ids
+msgid "Ratings"
+msgstr "Xếp hạng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_maintenance_request__support_reason
+msgid "Reason for adding Support"
+msgstr "Lý do thêm Hỗ trợ"
+
+#. module: hotel_management_odoo
+#: model:res.groups,name:hotel_management_odoo.hotel_group_reception
+msgid "Receptionist"
+msgstr "Nhân viên lễ tân"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.report_room_booking
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.report_sale_order
+msgid "Reference No."
+msgstr "Số tham chiếu"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_fleet_vehicle_model__uom_id
+msgid "Reference Uom"
+msgstr "Tham khảo Uom"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__remarks
+msgid "Remarks"
+msgstr "Nhận xét"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__list_price
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking_line__price_unit
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.hotel_room_view_form
+msgid "Rent"
+msgstr "Thuê"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_fleet_vehicle_model__price_per_km
+msgid "Rent for Vehicle"
+msgstr "Thuê xe"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_fleet_booking_line__price_unit
+msgid "Rent/KM"
+msgstr "Thuê/KM"
+
+#. module: hotel_management_odoo
+#: model:ir.ui.menu,name:hotel_management_odoo.hotel_reporting_menu
+msgid "Reporting"
+msgstr "Báo cáo"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.cleaning_request_view_form
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.maintenance_request_view_form
+msgid "Request Support"
+msgstr "Yêu cầu hỗ trợ"
+
+#. module: hotel_management_odoo
+#: model:ir.ui.menu,name:hotel_management_odoo.room_booking_menu
+msgid "Reservation"
+msgstr "Sự đặt chỗ"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.room_booking_view_form
+msgid "Reserve"
+msgstr "Đã đặt"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__hotel_room__status__reserved
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__room_booking__state__reserved
+msgid "Reserved"
+msgstr "Đã đặt"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__activity_user_id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__activity_user_id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__activity_user_id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__activity_user_id
+msgid "Responsible User"
+msgstr "Người sử dụng có trách nhiệm"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__amount_taxed_room
+msgid "Rom Tax"
+msgstr "Thuế Rom"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__room_id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__room_line_ids
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking_detail__room_id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking_line__room_id
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__account_move_line__product_type__room
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__cleaning_request__cleaning_type__room
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__maintenance_request__type__room
+#: model:ir.ui.menu,name:hotel_management_odoo.hotel_room_menu
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.room_booking_view_form
+msgid "Room"
+msgstr "Phòng"
+
+#. module: hotel_management_odoo
+#. odoo-python
+#: code:addons/hotel_management_odoo/models/room_booking.py:0
+#, python-format
+msgid "Room Already Reserved."
+msgstr "Phòng đã được đặt."
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__room_amenities_ids
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.hotel_room_view_form
+msgid "Room Amenities"
+msgstr "Tiện nghi phòng"
+
+#. module: hotel_management_odoo
+#: model:ir.actions.act_window,name:hotel_management_odoo.room_booking_action
+#: model:ir.ui.menu,name:hotel_management_odoo.room_booking_detail_menu
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.report_room_booking
+msgid "Room Booking"
+msgstr "Đặt phòng"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.room_booking_view_calendar
+msgid "Room overview"
+msgstr "Tổng quan phòng"
+
+#. module: hotel_management_odoo
+#: model:ir.model,name:hotel_management_odoo.model_room_booking_detail
+#: model:ir.model,name:hotel_management_odoo.model_sale_order_detail
+msgid "Room Booking Details"
+msgstr "Chi tiết đặt phòng"
+
+#. module: hotel_management_odoo
+#: model:ir.actions.report,name:hotel_management_odoo.action_report_room_booking
+msgid "Room Booking Order"
+msgstr "Đặt phòng"
+
+#. module: hotel_management_odoo
+#: model:ir.actions.act_window,name:hotel_management_odoo.room_booking_detail_action
+msgid "Room Booking Report"
+msgstr "Báo cáo đặt phòng"
+
+#. module: hotel_management_odoo
+#. odoo-python
+#: code:addons/hotel_management_odoo/models/room_booking.py:0
+#, python-format
+msgid "Room Entry Duplicates Found!, You Cannot Book \"%s\" Room More Than Once!"
+msgstr "Đã tìm thấy mục nhập phòng trùng lặp!, Bạn không thể đặt phòng \"%s\" nhiều hơn một lần!"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__room_image
+msgid "Room Image"
+msgstr "Hình ảnh phòng"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.room_booking_view_form
+msgid "Room Lines"
+msgstr "Dòng phòng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__room_maintenance_ids
+msgid "Room Maintenance"
+msgstr "Bảo trì phòng"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.hotel_room_view_form
+msgid "Room Manager"
+msgstr "Quản lý phòng"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.report_room_booking
+msgid "Room No."
+msgstr "Phòng số"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__room_type
+msgid "Room Type"
+msgstr "Kiểu phòng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__amount_untaxed_room
+msgid "Room Untaxed"
+msgstr "Phòng không có thuế"
+
+#. module: hotel_management_odoo
+#. odoo-python
+#: code:addons/hotel_management_odoo/models/hotel_room.py:0
+#, python-format
+msgid "Room capacity must be more than 0"
+msgstr "Sức chứa phòng phải lớn hơn 0"
+
+#. module: hotel_management_odoo
+#. odoo-javascript
+#: code:addons/hotel_management_odoo/static/src/js/dashboard_action.js:0
+#: model:ir.actions.act_window,name:hotel_management_odoo.hotel_room_action
+#: model:ir.model,name:hotel_management_odoo.model_hotel_room
+#, python-format
+msgid "Rooms"
+msgstr "Phòng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__message_has_sms_error
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_amenity__message_has_sms_error
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__message_has_sms_error
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_service__message_has_sms_error
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__message_has_sms_error
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Lỗi gửi tin nhắn SMS"
+
+#. module: hotel_management_odoo
+#: model:ir.actions.report,name:hotel_management_odoo.action_report_sale_order
+#: model:ir.ui.menu,name:hotel_management_odoo.sale_order_detail_menu
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.report_sale_order
+msgid "Sale Order"
+msgstr "Lệnh bán"
+
+#. module: hotel_management_odoo
+#: model:ir.actions.act_window,name:hotel_management_odoo.sale_order_detail_action
+msgid "Sale Order Report"
+msgstr "Báo cáo đơn hàng bán"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__sequence
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__sequence
+msgid "Sequence"
+msgstr "Sự liên tiếp"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_cleaning_request__sequence
+msgid "Sequence for identifying the request"
+msgstr "Trình tự để xác định yêu cầu"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_maintenance_request__sequence
+msgid "Sequence number for identifying maintenance request"
+msgstr "Số thứ tự để xác định yêu cầu bảo trì"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_service__name
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__service_line_ids
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_service_booking_line__service_id
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__account_move_line__product_type__service
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.room_booking_view_form
+msgid "Service"
+msgstr "Dịch vụ"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.room_booking_view_form
+msgid "Service Lines"
+msgstr "Dòng dịch vụ"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__amount_taxed_service
+msgid "Service Tax"
+msgstr "Thuế dịch vụ"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__amount_untaxed_service
+msgid "Service Untaxed"
+msgstr "Dịch vụ không tính thuế"
+
+#. module: hotel_management_odoo
+#: model:ir.actions.act_window,name:hotel_management_odoo.hotel_service_action
+#: model:ir.ui.menu,name:hotel_management_odoo.hotel_service_menu
+msgid "Services"
+msgstr "Dịch vụ"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.room_booking_view_form
+msgid "Set as Done"
+msgstr "Đặt thành Đã xong"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__user_id
+msgid "Sets the User automatically"
+msgstr "Tự động thiết lập Người dùng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_fleet_booking_line__booking_id
+#: model:ir.model.fields,help:hotel_management_odoo.field_food_booking_line__booking_id
+msgid "Shows the room Booking"
+msgstr "Hiển thị phòng Đặt phòng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__hotel_room__room_type__single
+msgid "Single"
+msgstr "Đơn"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.report_room_booking
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.report_sale_order
+msgid "Sl No."
+msgstr "Sl No."
+
+#. module: hotel_management_odoo
+#. odoo-python
+#: code:addons/hotel_management_odoo/models/room_booking_line.py:0
+#, python-format
+msgid ""
+"Sorry, You cannot create a reservation for this date since it overlaps with "
+"another reservation..!!"
+msgstr ""
+"Xin lỗi, bạn không thể tạo đặt chỗ cho ngày này vì nó trùng với "
+"một đặt chỗ khác..!!"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_amenity__description
+msgid "Specify the amenity description"
+msgstr "Chỉ định mô tả tiện nghi"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.cleaning_request_view_form
+msgid "Start"
+msgstr "Bắt đầu"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__state
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__state
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__state
+msgid "State"
+msgstr "Tình trạng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_event_booking_line__state
+msgid "State of Room Booking"
+msgstr "Tình trạng đặt phòng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_cleaning_request__state
+msgid "State of cleaning request"
+msgstr "Trạng thái yêu cầu vệ sinh"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_maintenance_request__state
+msgid "State of maintenance request"
+msgstr "Trạng thái yêu cầu bảo trì"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__state
+msgid "State of the Booking"
+msgstr "Tình trạng đặt phòng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__status
+msgid "Status"
+msgstr "Trạng thái"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_cleaning_request__activity_state
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_room__activity_state
+#: model:ir.model.fields,help:hotel_management_odoo.field_maintenance_request__activity_state
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Trạng thái dựa trên hoạt động\n"
+"Quá hạn: Ngày đến hạn đã qua\n"
+"Hôm nay: Ngày hoạt động là hôm nay\n"
+"Đã lên kế hoạch: Hoạt động trong tương lai."
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_room__status
+msgid "Status of The Room"
+msgstr "Tình trạng của phòng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__invoice_status
+msgid "Status of the Invoice"
+msgstr "Trạng thái của hóa đơn"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_event_booking_line__price_subtotal
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_fleet_booking_line__price_subtotal
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_food_booking_line__price_subtotal
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking_line__price_subtotal
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_service_booking_line__price_subtotal
+msgid "Subtotal"
+msgstr "Tổng cộng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__support_reason
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__support_reason
+msgid "Support"
+msgstr "Ủng hộ"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_cleaning_request__support_reason
+msgid "Support Reason"
+msgstr "Lý do hỗ trợ"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__support_team_ids
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__support_team_ids
+msgid "Support Team"
+msgstr "Đội ngũ hỗ trợ"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_cleaning_request__support_team_ids
+msgid "Support team members"
+msgstr "Các thành viên nhóm hỗ trợ"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_event_booking_line__price_tax
+#: model:ir.model.fields,help:hotel_management_odoo.field_food_booking_line__price_tax
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking_line__price_tax
+#: model:ir.model.fields,help:hotel_management_odoo.field_service_booking_line__price_tax
+msgid "Tax Amount"
+msgstr "Số tiền thuế"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__amount_taxed_event
+msgid "Tax for Event"
+msgstr "Thuế cho sự kiện"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__amount_taxed_fleet
+msgid "Tax for Fleet"
+msgstr "Thuế cho đội tàu"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__amount_taxed_food
+msgid "Tax for Food"
+msgstr "Thuế cho thực phẩm"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__amount_taxed_room
+msgid "Tax for Room"
+msgstr "Thuế cho phòng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__amount_taxed_service
+msgid "Tax for Service"
+msgstr "Thuế cho dịch vụ"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_event_booking_line__tax_ids
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_fleet_booking_line__tax_ids
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_food_booking_line__tax_ids
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__amount_tax
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking_line__tax_ids
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_service_booking_line__tax_ids
+msgid "Taxes"
+msgstr "Thuế"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__team_id
+msgid "Team"
+msgstr "Đội"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_team__team_head_id
+msgid "Team Head"
+msgstr "Trưởng nhóm"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__team_head_id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_team__user_id
+msgid "Team Leader"
+msgstr "Trưởng nhóm"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__team_member_ids
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__team_member_ids
+msgid "Team Member"
+msgstr "Thành viên nhóm"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_cleaning_team__member_ids
+msgid "Team Members"
+msgstr "Thành viên nhóm"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_team__name
+msgid "Team Name"
+msgstr "Tên đội"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_maintenance_request__team_id
+msgid "Team for which this request is assigned"
+msgstr "Nhóm được giao yêu cầu này"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_event_booking_line__currency_id
+#: model:ir.model.fields,help:hotel_management_odoo.field_fleet_booking_line__currency_id
+#: model:ir.model.fields,help:hotel_management_odoo.field_food_booking_line__currency_id
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking_line__currency_id
+#: model:ir.model.fields,help:hotel_management_odoo.field_service_booking_line__currency_id
+msgid "The currency used"
+msgstr "Tiền tệ được sử dụng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__invoice_count
+msgid "The number of invoices created"
+msgstr "Số lượng hóa đơn được tạo"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_food_booking_line__price_unit
+msgid "The price of the selected food item."
+msgstr "Giá của món ăn được chọn."
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_service_booking_line__price_unit
+msgid "The price of the selected service."
+msgstr "Giá của dịch vụ đã chọn."
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_event_booking_line__uom_qty
+#: model:ir.model.fields,help:hotel_management_odoo.field_fleet_booking_line__uom_qty
+#: model:ir.model.fields,help:hotel_management_odoo.field_food_booking_line__uom_qty
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking_line__uom_qty
+#: model:ir.model.fields,help:hotel_management_odoo.field_service_booking_line__uom_qty
+msgid "The quantity converted into the UoM used by the product"
+msgstr "Số lượng được chuyển đổi thành UoM được sản phẩm sử dụng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_room__list_price
+msgid "The rent of the room."
+msgstr "Tiền thuê phòng."
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking_line__price_unit
+msgid "The rent price of the selected room."
+msgstr "Giá thuê của phòng đã chọn."
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_fleet_booking_line__price_unit
+msgid "The rent/km of the selected fleet."
+msgstr "Tiền thuê/km của đội xe đã chọn."
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_event_booking_line__price_unit
+msgid "The selling price of the selected ticket."
+msgstr "Giá bán của vé đã chọn."
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_cleaning_request__assigned_id
+msgid "The team member to whom the request isAssigned To"
+msgstr "Thành viên nhóm được giao yêu cầu"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__amount_total
+msgid "The total Amount including Tax"
+msgstr "Tổng số tiền bao gồm Thuế"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_maintenance_request__type
+msgid "The type for which the request is creating"
+msgstr "Loại mà yêu cầu đang được tạo"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__amount_untaxed
+msgid "This indicates the total untaxed amount"
+msgstr "Điều này cho biết tổng số tiền chưa đánh thuế"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_maintenance_request__cleaning_maintenance
+msgid "This is the Cleaning Maintenance"
+msgstr "Đây là Bảo trì vệ sinh"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__currency_id
+msgid "This is the Currency used"
+msgstr "Đây là loại tiền tệ được sử dụng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_maintenance_request__hotel_maintenance
+msgid "This is the Hotel Maintenance"
+msgstr "Đây là Bảo trì Khách sạn"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__amount_total_event
+msgid "This is the Total Amount for Event"
+msgstr "Đây là Tổng số tiền cho Sự kiện"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__amount_total_fleet
+msgid "This is the Total Amount for Fleet"
+msgstr "Đây là Tổng số tiền cho Đội tàu"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__amount_total_food
+msgid "This is the Total Amount for Food"
+msgstr "Đây là tổng số tiền cho thực phẩm"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__amount_total_room
+msgid "This is the Total Amount for Room"
+msgstr "Đây là Tổng số tiền cho Phòng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__amount_total_service
+msgid "This is the Total Amount for Service"
+msgstr "Đây là Tổng số tiền cho dịch vụ"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_event_booking_line__uom_id
+#: model:ir.model.fields,help:hotel_management_odoo.field_fleet_booking_line__uom_id
+#: model:ir.model.fields,help:hotel_management_odoo.field_food_booking_line__uom_id
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking_line__uom_id
+#: model:ir.model.fields,help:hotel_management_odoo.field_service_booking_line__uom_id
+msgid "This will set the unit of measure used"
+msgstr "Điều này sẽ thiết lập đơn vị đo lường được sử dụng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_event_booking_line__ticket_id
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.room_booking_view_form
+msgid "Ticket"
+msgstr "Vé"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__room_booking__invoice_status__to_invoice
+msgid "To Invoice"
+msgstr "Lập hóa đơn"
+
+#. module: hotel_management_odoo
+#. odoo-javascript
+#: code:addons/hotel_management_odoo/static/src/xml/dashboard_templates.xml:0
+#, python-format
+msgid "Today's Check Out"
+msgstr "Kiểm tra ngày hôm nay"
+
+#. module: hotel_management_odoo
+#. odoo-javascript
+#: code:addons/hotel_management_odoo/static/src/js/dashboard_action.js:0
+#, python-format
+msgid "Today's Check-Out"
+msgstr "Trả phòng hôm nay"
+
+#. module: hotel_management_odoo
+#. odoo-javascript
+#: code:addons/hotel_management_odoo/static/src/js/dashboard_action.js:0
+#: code:addons/hotel_management_odoo/static/src/xml/dashboard_templates.xml:0
+#, python-format
+msgid "Today's Events"
+msgstr "Sự kiện hôm nay"
+
+#. module: hotel_management_odoo
+#. odoo-javascript
+#: code:addons/hotel_management_odoo/static/src/xml/dashboard_templates.xml:0
+#, python-format
+msgid "Today's Revenue"
+msgstr "Doanh thu ngày nay"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_event_booking_line__price_total
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_fleet_booking_line__price_total
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_food_booking_line__price_total
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__amount_total
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking_line__price_total
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_service_booking_line__price_total
+msgid "Total"
+msgstr "Tổng cộng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__amount_total_event
+msgid "Total Amount for Event"
+msgstr "Tổng số tiền cho sự kiện"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__amount_total_fleet
+msgid "Total Amount for Fleet"
+msgstr "Tổng số tiền cho đội tàu"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__amount_total_food
+msgid "Total Amount for Food"
+msgstr "Tổng số tiền cho thực phẩm"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__amount_total_room
+msgid "Total Amount for Room"
+msgstr "Tổng số tiền cho phòng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__amount_total_service
+msgid "Total Amount for Service"
+msgstr "Tổng số tiền cho dịch vụ"
+
+#. module: hotel_management_odoo
+#. odoo-javascript
+#: code:addons/hotel_management_odoo/static/src/js/dashboard_action.js:0
+#: code:addons/hotel_management_odoo/static/src/xml/dashboard_templates.xml:0
+#, python-format
+msgid "Total Events"
+msgstr "Tổng số sự kiện"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_fleet_booking_line__uom_qty
+msgid "Total KM"
+msgstr "Tổng số KM"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_event_booking_line__price_subtotal
+#: model:ir.model.fields,help:hotel_management_odoo.field_food_booking_line__price_subtotal
+#: model:ir.model.fields,help:hotel_management_odoo.field_service_booking_line__price_subtotal
+msgid "Total Price Excluding Tax"
+msgstr "Tổng giá chưa bao gồm thuế"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_event_booking_line__price_total
+#: model:ir.model.fields,help:hotel_management_odoo.field_fleet_booking_line__price_total
+#: model:ir.model.fields,help:hotel_management_odoo.field_food_booking_line__price_total
+#: model:ir.model.fields,help:hotel_management_odoo.field_service_booking_line__price_total
+msgid "Total Price Including Tax"
+msgstr "Tổng giá bao gồm thuế"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking_line__price_subtotal
+msgid "Total Price excluding Tax"
+msgstr "Tổng giá chưa bao gồm thuế"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking_line__price_total
+msgid "Total Price including Tax"
+msgstr "Tổng giá bao gồm thuế"
+
+#. module: hotel_management_odoo
+#. odoo-javascript
+#: code:addons/hotel_management_odoo/static/src/js/dashboard_action.js:0
+#: code:addons/hotel_management_odoo/static/src/xml/dashboard_templates.xml:0
+#, python-format
+msgid "Total Reservations"
+msgstr "Tổng số đặt phòng"
+
+#. module: hotel_management_odoo
+#. odoo-javascript
+#: code:addons/hotel_management_odoo/static/src/xml/dashboard_templates.xml:0
+#, python-format
+msgid "Total Revenue"
+msgstr "Tổng doanh thu"
+
+#. module: hotel_management_odoo
+#. odoo-javascript
+#: code:addons/hotel_management_odoo/static/src/xml/dashboard_templates.xml:0
+#, python-format
+msgid "Total Room"
+msgstr "Tổng số phòng"
+
+#. module: hotel_management_odoo
+#. odoo-javascript
+#: code:addons/hotel_management_odoo/static/src/xml/dashboard_templates.xml:0
+#, python-format
+msgid "Total Staff"
+msgstr "Tổng số nhân viên"
+
+#. module: hotel_management_odoo
+#. odoo-javascript
+#: code:addons/hotel_management_odoo/static/src/js/dashboard_action.js:0
+#, python-format
+msgid "Total Staffs"
+msgstr "Tổng số nhân viên"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_event_booking_line__price_tax
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_fleet_booking_line__price_tax
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_food_booking_line__price_tax
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking_line__price_tax
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_service_booking_line__price_tax
+msgid "Total Tax"
+msgstr "Tổng thuế"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__amount_tax
+msgid "Total Tax Amount"
+msgstr "Tổng số tiền thuế"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__amount_untaxed
+msgid "Total Untaxed Amount"
+msgstr "Tổng số tiền chưa đánh thuế"
+
+#. module: hotel_management_odoo
+#. odoo-javascript
+#: code:addons/hotel_management_odoo/static/src/xml/dashboard_templates.xml:0
+#, python-format
+msgid "Total Vehicle"
+msgstr "Tổng số xe"
+
+#. module: hotel_management_odoo
+#. odoo-javascript
+#: code:addons/hotel_management_odoo/static/src/js/dashboard_action.js:0
+#, python-format
+msgid "Total Vehicles"
+msgstr "Tổng số xe"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.room_booking_view_form
+msgid "Total amount"
+msgstr "Tổng số tiền"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_fleet_booking_line__price_subtotal
+msgid "Total price excluding tax"
+msgstr "Tổng giá chưa bao gồm thuế"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_fleet_booking_line__price_tax
+msgid "Total tax amount"
+msgstr "Tổng số tiền thuế"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__type
+msgid "Type"
+msgstr "Kiểu"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_cleaning_request__activity_exception_decoration
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_room__activity_exception_decoration
+#: model:ir.model.fields,help:hotel_management_odoo.field_maintenance_request__activity_exception_decoration
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Loại hoạt động ngoại lệ được ghi lại."
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_fleet_vehicle_model__uom_id
+msgid "UOM of the product"
+msgstr "Đơn vị đo lường của sản phẩm"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_event_booking_line__uom_id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_fleet_booking_line__uom_id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_food_booking_line__uom_id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__uom_id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking_line__uom_id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_service_booking_line__uom_id
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.room_booking_view_form
+msgid "Unit of Measure"
+msgstr "Đơn vị đo lường"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__amount_untaxed_event
+msgid "Untaxed Amount for Event"
+msgstr "Số tiền chưa đánh thuế cho sự kiện"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__amount_untaxed_food
+msgid "Untaxed Amount for Food"
+msgstr "Số tiền không đánh thuế cho thực phẩm"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__amount_untaxed_room
+msgid "Untaxed Amount for Room"
+msgstr "Số tiền chưa đánh thuế cho phòng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__amount_untaxed_service
+msgid "Untaxed Amount for Service"
+msgstr "Số tiền chưa đánh thuế cho dịch vụ"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.room_booking_view_form
+msgid "Untaxed amount"
+msgstr "Số tiền chưa đánh thuế"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.room_booking_view_form
+msgid "Untaxed amount for Event"
+msgstr "Số tiền chưa đánh thuế cho Sự kiện"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__amount_untaxed_fleet
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.room_booking_view_form
+msgid "Untaxed amount for Fleet"
+msgstr "Số tiền chưa đánh thuế cho Đội tàu"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.room_booking_view_form
+msgid "Untaxed amount for Food"
+msgstr "Số tiền không đánh thuế cho Thực phẩm"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.room_booking_view_form
+msgid "Untaxed amount for Room"
+msgstr "Số tiền chưa đánh thuế cho Phòng"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.room_booking_view_form
+msgid "Untaxed amount for Service"
+msgstr "Số tiền chưa đánh thuế cho Dịch vụ"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__user_id
+msgid "User"
+msgstr "Người sử dụng"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_maintenance_request__assigned_user_id
+msgid "User to whom the request is assigned"
+msgstr "Người dùng được giao yêu cầu"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__vehicle_id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_fleet_booking_line__fleet_id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__vehicle_maintenance_id
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__vehicle_line_ids
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__cleaning_request__cleaning_type__vehicle
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__maintenance_request__type__vehicle
+#: model:ir.ui.menu,name:hotel_management_odoo.fleet_vehicle_menu
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.room_booking_view_form
+msgid "Vehicle"
+msgstr "Phương tiện giao thông"
+
+#. module: hotel_management_odoo
+#: model:ir.actions.act_window,name:hotel_management_odoo.fleet_vehicle_model_action
+#: model:ir.ui.menu,name:hotel_management_odoo.fleet_vehicle_model_menu
+msgid "Vehicles"
+msgstr "Xe cộ"
+
+#. module: hotel_management_odoo
+#: model:ir.actions.act_window,name:hotel_management_odoo.lunch_supplier_action
+#: model:ir.ui.menu,name:hotel_management_odoo.lunch_supplier_menu
+msgid "Vendors"
+msgstr "Nhà cung cấp"
+
+#. module: hotel_management_odoo
+#: model_terms:ir.ui.view,arch_db:hotel_management_odoo.maintenance_request_view_form
+msgid "Verify"
+msgstr "Xác minh"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__cleaning_request__state__support
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__maintenance_request__state__support
+msgid "Waiting For Support"
+msgstr "Đang chờ hỗ trợ"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__maintenance_request__state__team_leader_approve
+msgid "Waiting For User Assign"
+msgstr "Đang chờ người dùng chỉ định"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields.selection,name:hotel_management_odoo.selection__maintenance_request__state__pending
+msgid "Waiting For User To Accept"
+msgstr "Đang chờ người dùng chấp nhận"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_cleaning_request__website_message_ids
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_amenity__website_message_ids
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_room__website_message_ids
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_hotel_service__website_message_ids
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_maintenance_request__website_message_ids
+#: model:ir.model.fields,field_description:hotel_management_odoo.field_room_booking__website_message_ids
+msgid "Website Messages"
+msgstr "Tin nhắn trang web"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_cleaning_request__website_message_ids
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_amenity__website_message_ids
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_room__website_message_ids
+#: model:ir.model.fields,help:hotel_management_odoo.field_hotel_service__website_message_ids
+#: model:ir.model.fields,help:hotel_management_odoo.field_maintenance_request__website_message_ids
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__website_message_ids
+msgid "Website communication history"
+msgstr "Lịch sử giao tiếp trang web"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking_line__checkin_date
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking_line__checkout_date
+msgid "You can choose the date, Otherwise sets to current Date"
+msgstr "Bạn có thể chọn ngày, nếu không thì đặt thành Ngày hiện tại"
+
+#. module: hotel_management_odoo
+#. odoo-python
+#: code:addons/hotel_management_odoo/models/room_booking.py:0
+#, python-format
+msgid "Your Invoice is Due for Payment."
+msgstr "Hóa đơn của bạn đã đến hạn thanh toán."
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__maintenance_request_sent
+msgid "sets to True if the maintenance request send once"
+msgstr "đặt thành True nếu yêu cầu bảo trì được gửi một lần"
+
+#. module: hotel_management_odoo
+#: model:ir.model.fields,help:hotel_management_odoo.field_room_booking__is_checkin
+msgid "sets to True if the room is occupied"
+msgstr "đặt thành True nếu phòng có người ở"
