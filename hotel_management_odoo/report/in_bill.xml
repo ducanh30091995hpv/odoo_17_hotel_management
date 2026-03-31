@@ -1,0 +1,125 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<odoo>
+    <record id="paperformat_scrap_reports111" model="report.paperformat">
+        <field name="name">Bản in khổ 80</field>
+        <field name="default" eval="True"/>
+        <field name="format">custom</field>
+        <field name="page_height">150</field>
+        <field name="page_width">70</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">5</field>
+        <field name="margin_bottom">5</field>
+        <field name="margin_left">1</field>
+        <field name="margin_right">1</field>
+        <field name="header_line" eval="False"/>
+        <field name="header_spacing">20</field>
+        <field name="dpi">90</field>
+        <field name="disable_shrinking" eval="False"/>
+    </record>
+
+    <!--    Room booking report action-->
+    <record id="action_in_bill" model="ir.actions.report">
+        <field name="name">Hóa đơn Khách sạn (Hotel Bill)</field>
+        <field name="model">room.booking</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">hotel_management_odoo.in_bill</field>
+        <field name="report_file">hotel_management_odoo.in_bill</field>
+        <field name="binding_model_id" ref="model_room_booking"/>
+        <field name="binding_type">report</field>
+        <field name="paperformat_id" ref="hotel_management_odoo.paperformat_scrap_reports111"/>
+    </record>
+    <template id="in_bill">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.basic_layout">
+                    <div class="page" style="font-family: Arial, sans-serif; font-size: 13px; color: black; width: 72mm; margin: 0; padding: 0;">
+                        <!-- Header -->
+                        <div style="text-align: center; margin-bottom: 5px;">
+                            <div style="font-weight: bold; font-size: 15px; text-transform: uppercase;">
+                                <span t-field="o.company_id.name"/>
+                            </div>
+                            <div style="font-size: 12px;">Mã số thuế: <span t-field="o.company_id.vat"/></div>
+                            <div style="font-weight: bold; font-size: 17px; margin-top: 3px; border-top: 1px solid black; border-bottom: 1px solid black; padding: 3px 0; text-transform: uppercase;">
+                                PHIẾU THANH TOÁN
+                            </div>
+                        </div>
+
+                        <!-- Info -->
+                        <div style="margin-bottom: 5px; line-height: 1.3; font-size: 12px;">
+                            <div>Người mua: <span t-field="o.partner_id.name" style="font-weight: bold;"/></div>
+                            <div t-if="o.partner_id.vat">MST: <span t-field="o.partner_id.vat"/></div>
+                            <div>Địa chỉ: <span t-field="o.partner_id.contact_address"/></div>
+                        </div>
+
+                        <!-- Items Table -->
+                        <table style="width: 100%; border-collapse: collapse; margin-bottom: 5px; font-size: 12px;">
+                            <thead style="border-bottom: 1px solid black;">
+                                <tr>
+                                    <th style="text-align: left; padding: 2px 0;">Mặt hàng</th>
+                                    <th style="text-align: center; padding: 2px 0; width: 8%;">SL</th>
+                                    <th style="text-align: right; padding: 2px 0; width: 22%;">ĐG</th>
+                                    <th style="text-align: right; padding: 2px 0; width: 22%;">TT</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-set="all_lines" t-value="o.get_all_booking_lines()"/>
+                                <t t-set="counter" t-value="1"/>
+                                <tr t-foreach="all_lines" t-as="line" style="border-bottom: 1px dashed #ccc;">
+                                    <td style="padding: 3px 0; line-height: 1.2;">
+                                        <span t-esc="counter"/>. 
+                                        <t t-if="line._name == 'room.booking.line'">P. <span t-field="line.room_id.name"/></t>
+                                        <t t-else=""><span t-field="line.display_name"/></t>
+                                    </td>
+                                    <td style="text-align: center; padding: 3px 0;">
+                                        <span t-field="line.uom_qty" t-options='{"widget": "float", "precision": 0}'/>
+                                    </td>
+                                    <td style="text-align: right; padding: 3px 0;">
+                                        <span t-field="line.price_unit" t-options='{"widget": "float", "precision": 0}'/>
+                                    </td>
+                                    <td style="text-align: right; padding: 3px 0; font-weight: bold;">
+                                        <span t-field="line.price_subtotal" t-options='{"widget": "float", "precision": 0}'/>
+                                    </td>
+                                    <t t-set="counter" t-value="counter + 1"/>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- Totals -->
+                        <div style="margin-top: 5px;">
+                            <div style="text-align: right;">
+                                <span>Thành tiền: </span>
+                                <span style="font-weight: bold;" t-field="o.amount_untaxed" t-options='{"widget": "float", "precision": 0}'/>
+                            </div>
+                            <div t-if="o.amount_tax > 0" style="text-align: right;">
+                                <span>Thuế: </span>
+                                <span style="font-weight: bold;" t-field="o.amount_tax" t-options='{"widget": "float", "precision": 0}'/>
+                            </div>
+                            <div t-if="o.tratruoc > 0" style="text-align: right;">
+                                <span>Số tiền trả trước: </span>
+                                <span style="font-weight: bold;" t-field="o.tratruoc" t-options='{"widget": "float", "precision": 0}'/>
+                            </div>
+                            <div style="text-align: right; font-size: 15px; margin-top: 2px;">
+                                <span style="font-weight: bold;">Tổng cộng: </span>
+                                <span style="font-weight: bold;" t-field="o.amount_total" t-options='{"widget": "float", "precision": 0}'/>
+                            </div>
+                            <div style="font-style: italic; margin-top: 5px; border-top: 1px solid black; padding-top: 2px;">
+                                Bằng chữ: <span t-esc="o.get_amount_in_words(o.amount_total)"/>
+                            </div>
+                        </div>
+
+                        <!-- QR Code -->
+                        <div style="text-align: center; margin-top: 15px;">
+                            <img t-if="o.return_src_image()" t-att-src="o.return_src_image()" style="width: 150px; height: 150px;"/>
+                            <div style="font-size: 11px; margin-top: 5px; font-style: italic;">Quét để thanh toán</div>
+                        </div>
+
+                        <!-- Footer -->
+                        <div style="text-align: center; margin-top: 20px; border-top: 1px solid black; padding-top: 5px; font-size: 12px;">
+                            <span t-esc="o.return_loichaochantrang()"/>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

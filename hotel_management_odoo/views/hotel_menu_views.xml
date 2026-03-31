@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!--    Main Menu-->
+    <menuitem id="hotel_management_menu_root"
+              name="Hotel Management"
+              web_icon="hotel_management_odoo,static/description/icon.png"
+              sequence="10"/>
+    <!--    Configuration menu-->
+    <menuitem id="hotel_config_menu"
+              name="Configuration"
+              sequence="100"
+              parent="hotel_management_menu_root"/>
+    <!--    Food menu-->
+    <menuitem id="food_menu"
+              name="Food"
+              sequence="40"
+              parent="hotel_management_menu_root"/>
+    <!--    Fleet menu-->
+    <menuitem id="fleet_vehicle_menu"
+              name="Vehicle"
+              sequence="50"
+              parent="hotel_management_menu_root"/>
+    <menuitem id="room_booking_abc_menu" name="Đặt phòng" sequence="30"
+              parent="hotel_management_menu_root"/>
+
+    <record id="hotel_room_chart_action" model="ir.actions.client">
+        <field name="name">Sơ đồ phòng</field>
+        <field name="tag">hotel_room_chart</field>
+    </record>
+
+    <menuitem id="room_chart_menu_root"
+              name="Sơ đồ phòng"
+              action="hotel_room_chart_action"
+              parent="hotel_management_menu_root"
+              sequence="20"/>
+
+    <menuitem id="room_chart_menu_booking"
+              name="Sơ đồ phòng"
+              action="hotel_room_chart_action"
+              parent="room_booking_abc_menu"
+              sequence="5"/>
+</odoo>

@@ -1,0 +1,268 @@
+:root {
+  --surface-color: #fff;
+  --curve: 40;
+}
+
+.cards {
+
+}
+
+/*.card {*/
+/*  position: relative;*/
+/*  display: block;*/
+/*  height: 100%;*/
+/*  border-radius: calc(var(--curve) * 1px);*/
+/*  overflow: hidden;*/
+/*  text-decoration: none;*/
+/*}*/
+
+.card__image {
+  width: 100%;
+  height: auto;
+}
+
+.card__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  border-radius: calc(var(--curve) * 1px);
+  background-color: var(--surface-color);
+  transform: translateY(100%);
+  transition: .2s ease-in-out;
+}
+
+.card:hover .card__overlay {
+  transform: translateY(0);
+}
+
+.card__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 2em;
+  border-radius: calc(var(--curve) * 1px) 0 0 0;
+  background-color: var(--surface-color);
+  transform: translateY(-100%);
+  transition: .2s ease-in-out;
+}
+
+.card__arc {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  z-index: 1;
+}
+
+.card__arc path {
+  fill: var(--surface-color);
+  d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+}
+
+.card:hover .card__header {
+  transform: translateY(0);
+}
+
+.card__thumb {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.card__title {
+  font-size: 1em;
+  margin: 0 0 .3em;
+  color: #6A515E;
+}
+
+.card__tagline {
+  display: block;
+  margin: 1em 0;
+  font-family: "MockFlowFont";
+  font-size: .8em;
+  color: #D7BDCA;
+}
+
+.card__status {
+  font-size: .8em;
+  color: #D7BDCA;
+}
+
+.card__description {
+  padding: 0 2em 2em;
+  margin: 0;
+  color: #D7BDCA;
+  font-family: "MockFlowFont";
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.view_kanban_custom .o_kanban_renderer .o_kanban_record > div:not(.o_dropdown_kanban), .o_kanban_renderer .o_kanban_quick_create {
+  border: none !important;
+  background-color: transparent !important;
+}
+
+/* Room Chart Advanced UI */
+.o_room_chart_container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f9fa;
+    min-height: 100%;
+}
+
+
+.o_room_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 15px;
+}
+
+.o_room_card {
+    width: 130px;
+    height: 130px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.o_room_card:hover {
+    transform: scale(1.05);
+}
+
+.o_room_number {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.o_room_type {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.o_room_status_icon {
+    opacity: 0.9;
+}
+
+.gap-2 { gap: 0.5rem; }
+.gap-3 { gap: 1rem; }
+
+.bg-success { background-color: #28a745 !important; }
+.bg-warning { background-color: #ffc107 !important; }
+.bg-danger { background-color: #dc3545 !important; }
+.bg-info { background-color: #17a2b8 !important; }
+.bg-light { background-color: #f8f9fa !important; color: #333 !important; }
+
+/* Side-by-side layout */
+.o_room_main_layout {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.o_room_chart_content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1rem;
+}
+
+.o_room_sidebar_charts {
+    width: 380px;
+    min-width: 380px;
+    border-left: 1px solid #dee2e6;
+    background-color: #f8f9fa;
+    overflow-y: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.o_room_sidebar_charts .card {
+    border: none;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .o_room_chart_header {
+        .row {
+            flex-direction: column;
+            align-items: flex-start !important;
+        }
+        .col {
+            width: 100%;
+            margin-top: 10px;
+        }
+        .d-flex {
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+    }
+
+    .o_room_grid {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 10px;
+    }
+
+    .o_room_card {
+        width: 100%;
+        height: 110px;
+        padding: 5px;
+        
+        .o_room_number {
+            font-size: 1.2rem;
+        }
+    }
+
+    .o_room_main_layout {
+        display: block !important;
+        flex: none !important;
+        overflow: visible !important;
+    }
+
+    .o_room_chart_content {
+        padding: 10px;
+        overflow: visible !important;
+        height: auto !important;
+    }
+
+    .o_room_sidebar_charts {
+        width: 100%;
+        min-width: 100%;
+        border-left: none;
+        border-top: 1px solid #dee2e6;
+        height: auto;
+        padding: 15px;
+        display: block !important;
+    }
+
+    .o_dashboard_buttons {
+        .col-12 {
+            border-left: none !important;
+            border-bottom: 1px solid #dee2e6;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+            
+            &:last-child {
+                border-bottom: none;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+

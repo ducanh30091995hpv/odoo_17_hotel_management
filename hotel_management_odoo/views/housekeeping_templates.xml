@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="housekeeping_mobile_template" name="Housekeeping Mobile">
+        &lt;!DOCTYPE html&gt;
+        <html lang="vi">
+            <head>
+                <meta charset="UTF-8"/>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+                <title>Dọn Phòng - Mobile</title>
+                <style>
+                    body {
+                        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+                        background-color: #f4f7f6;
+                        margin: 0;
+                        padding: 0;
+                        color: #333;
+                    }
+                    .header {
+                        background-color: #1a237e;
+                        color: white;
+                        padding: 15px;
+                        text-align: center;
+                        position: sticky;
+                        top: 0;
+                        z-index: 100;
+                        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+                    }
+                    .container {
+                        padding: 10px;
+                    }
+                    .room-card {
+                        background: white;
+                        border-radius: 12px;
+                        padding: 15px;
+                        margin-bottom: 12px;
+                        display: flex;
+                        flex-direction: column;
+                        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+                    }
+                    .room-main-info {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 100%;
+                        margin-bottom: 10px;
+                    }
+                    .room-info {
+                        flex: 1;
+                    }
+                    .room-name {
+                        font-size: 1.2rem;
+                        font-weight: bold;
+                        color: #1a237e;
+                        margin-bottom: 4px;
+                    }
+                    .room-floor {
+                        font-size: 0.9rem;
+                        color: #666;
+                    }
+                    .btn-clean {
+                        background-color: #4caf50;
+                        color: white;
+                        border: none;
+                        padding: 10px 15px;
+                        border-radius: 8px;
+                        font-weight: bold;
+                        cursor: pointer;
+                        text-decoration: none;
+                        display: inline-block;
+                        transition: background-color 0.2s;
+                    }
+                    .btn-clean:active {
+                        background-color: #388e3c;
+                    }
+                    .empty-state {
+                        text-align: center;
+                        padding: 40px 20px;
+                        color: #888;
+                    }
+                    .room-status-badge {
+                        background-color: #ff5252;
+                        color: white;
+                        font-size: 0.7rem;
+                        padding: 2px 6px;
+                        border-radius: 4px;
+                        margin-left: 8px;
+                        vertical-align: middle;
+                        text-transform: uppercase;
+                    }
+                    .btn-upload {
+                        background-color: #2196f3;
+                        color: white;
+                        border: none;
+                        padding: 10px 15px;
+                        border-radius: 8px;
+                        font-weight: bold;
+                        cursor: pointer;
+                        display: inline-block;
+                    }
+                    .room-actions {
+                        display: flex;
+                        gap: 10px;
+                        align-items: center;
+                    }
+                    .equipment-list {
+                        border-top: 1px solid #eee;
+                        padding-top: 10px;
+                        margin-top: 10px;
+                    }
+                    .equip-item {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin-bottom: 8px;
+                        font-size: 0.95rem;
+                    }
+                    .btn-report {
+                        background: none;
+                        border: 1px solid #ff5252;
+                        color: #ff5252;
+                        padding: 4px 10px;
+                        border-radius: 6px;
+                        font-size: 0.85rem;
+                        font-weight: 500;
+                    }
+                </style>
+            </head>
+            <body>
+                <div class="header">
+                    <h2 style="margin:0;">📋 DANH SÁCH DỌN PHÒNG</h2>
+                </div>
+                <div class="container">
+                    <t t-if="not dirty_rooms">
+                        <div class="empty-state">
+                            <p style="font-size: 1.5rem;">🎉</p>
+                            <p>Tất cả các phòng đã sạch!</p>
+                        </div>
+                    </t>
+                    <t t-foreach="dirty_rooms" t-as="room">
+                        <div class="room-card">
+                            <div class="room-main-info">
+                                <div class="room-info">
+                                    <div class="room-name">
+                                        <t t-esc="room.name"/>
+                                        <span class="room-status-badge">Bẩn</span>
+                                    </div>
+                                    <div class="room-floor">
+                                        Tầng: <t t-esc="room.floor_id.name or '-'"/>
+                                    </div>
+                                </div>
+                                <div class="room-actions">
+                                    <form t-attf-action="/housekeeping/upload_image/#{room.id}" method="post" enctype="multipart/form-data" style="margin:0;">
+                                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                        <label t-attf-for="file_#{room.id}" class="btn-upload">📷</label>
+                                        <input type="file" t-attf-id="file_#{room.id}" name="image" accept="image/*" capture="camera" style="display:none;" onchange="this.form.submit()"/>
+                                    </form>
+                                    <form t-attf-action="/housekeeping/mark_clean/#{room.id}" method="post" style="margin:0;">
+                                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                        <button type="submit" class="btn-clean">XONG ✅</button>
+                                    </form>
+                                </div>
+                            </div>
+                            
+                            <t t-if="room.equipment_ids">
+                                <div class="equipment-list">
+                                    <div style="font-size: 0.8rem; color: #999; margin-bottom: 8px; font-weight: bold; text-transform: uppercase;">Kiểm tra thiết bị:</div>
+                                    <t t-foreach="room.equipment_ids" t-as="equip">
+                                        <div class="equip-item">
+                                            <span>
+                                                <t t-esc="equip.name"/>
+                                                <small t-if="equip.serial_no" style="color: #bbb;"> (<t t-esc="equip.serial_no"/>)</small>
+                                            </span>
+                                            <t t-if="equip.status == 'working'">
+                                                <form t-attf-action="/housekeeping/report_broken/#{equip.id}" method="post" style="margin:0;">
+                                                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                                    <button type="submit" class="btn-report">Báo hỏng</button>
+                                                </form>
+                                            </t>
+                                            <t t-else="">
+                                                <span t-attf-style="padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; color: white; background-color: #{'#ff5252' if equip.status == 'broken' else '#ff9800'};">
+                                                    <t t-if="equip.status == 'broken'">ĐÃ BÁO HỎNG</t>
+                                                    <t t-else="">ĐANG SỬA</t>
+                                                </span>
+                                            </t>
+                                        </div>
+                                    </t>
+                                </div>
+                            </t>
+                        </div>
+                    </t>
+                </div>
+            </body>
+        </html>
+    </template>
+</odoo>
