@@ -11,7 +11,7 @@ const formattedDate = `${today.getFullYear()}-${today.getMonth() + 1}-${today.ge
 
 export class RoomChart extends Component {
     static template = "hotel_management_odoo.RoomChart";
-    static props = {};
+    static props = false;
 
     setup() {
         this.orm = useService("orm");

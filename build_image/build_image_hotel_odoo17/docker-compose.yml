@@ -11,9 +11,8 @@ services:
       - USER=odoo
       - PASSWORD=odoo
       - DB_NAME=odoo_db
-    volumes:
-      - ./extra-addons:/mnt/extra-addons
-      - ./config:/etc/odoo
+    # SỬ DỤNG DỮ LIỆU ĐÃ BAKE-IN TRONG IMAGE
+    # Không cần mount folder local giúp hệ thống chạy ổn định chỉ với 1 file .yml
 
   db:
     image: postgres:15

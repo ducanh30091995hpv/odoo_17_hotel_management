@@ -39,4 +39,11 @@
               action="hotel_room_chart_action"
               parent="room_booking_abc_menu"
               sequence="5"/>
+
+    <!--    Reporting Menu-->
+    <menuitem id="hotel_reporting_menu"
+              name="Reporting"
+              sequence="30"
+              parent="hotel_management_menu_root"/>
 </odoo>
+
